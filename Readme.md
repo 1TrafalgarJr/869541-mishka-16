@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Оксана Дьячкова](https://up.htmlacademy.ru/adaptive/16/user/869541).
-* Наставник: [Роман Коробейников] (https://up.htmlacademy.ru/adaptive/16/user/245335).
+* Наставник: [Роман Коробейников](https://up.htmlacademy.ru/adaptive/16/user/245335).
 
 ---
 
