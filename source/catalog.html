@@ -32,44 +32,22 @@
     </header>
 
     <main class="page-main catalog">
-      <h2 class="visually-hidden">Каталог товаров</h2>
       <h2 class="catalog__title">Каталог товаров</h2>
       <section class="catalog__photo">
         <div class="catalog__card">
           <div class="catalog__card-wrapper">
-            <img class="catalog__card-image" src="img/photo-1-mobile.png" width="260" height="195" alt="Карточка с товаром">
-            <p class="catalog__card-description">Зайчик-попрыгайчик</p>
+            <a href="#" class="catalog__card-link">
+              <img class="catalog__card-image" src="img/photo-1-mobile.png" width="260" height="195" alt="Карточка с товаром">
+            </a>
+            <a href="#" class="catalog__card-link">
+              <h3 class="catalog__card-description">Зайчик-попрыгайчик</h3>
+            </a>
             <p class="catalog__card-specification">Рост 30 см, вес 200 г</p>
             <div class="price basket">
               <p class="price__card">1 200 руб.</p>
               <a href="#" class="price__basket button button-modal">Корзина</a>
             </div>
           </div>
-
-          <div class="modal modal-order">
-            <h3 class="modal-title">ДОБАВИТЬ В КОРЗИНУ</h3>
-            <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
-              <fieldset class="modal__size">
-                <legend class="modal__legend">Выберите размер:</legend>
-                <ul class="modal__list">
-                  <li class="modal__item">
-                    <input class="modal-order__radio" id="S" type="radio" name="S" value="S">
-                    <label for="S">S</label>
-                  </li>
-                  <li class="modal__item">
-                    <input class="modal-order__radio" id="M" type="radio" name="M" value="M">
-                    <label for="M">M</label>
-                  </li>
-                  <li class="modal__item">
-                    <input class="modal-order__radio" id="L" type="radio" name="L" value="L">
-                    <label for="L">L</label>
-                  </li>
-                </ul>
-                <button class="button">ДОБАВИТЬ</button>
-              </fieldset>
-            </form>
-          </div>
-
         </div>
 
         <div class="catalog__card">
@@ -82,31 +60,6 @@
               <a href="#" class="price__basket button button-modal">Корзина</a>
             </div>
           </div>
-
-          <div class="modal modal-order">
-            <h3 class="modal-title">ДОБАВИТЬ В КОРЗИНУ</h3>
-            <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
-              <fieldset class="modal__size">
-                <legend class="modal__legend">Выберите размер:</legend>
-                <ul class="modal__list">
-                  <li class="modal__item">
-                    <input class="modal-order__radio" id="S" type="radio" name="S" value="S">
-                    <label for="S">S</label>
-                  </li>
-                  <li class="modal__item">
-                    <input class="modal-order__radio" id="M" type="radio" name="M" value="M">
-                    <label for="M">M</label>
-                  </li>
-                  <li class="modal__item">
-                    <input class="modal-order__radio" id="L" type="radio" name="L" value="L">
-                    <label for="L">L</label>
-                  </li>
-                </ul>
-                <button class="button">ДОБАВИТЬ</button>
-              </fieldset>
-            </form>
-          </div>
-
         </div>
 
         <div class="catalog__card">
@@ -119,43 +72,18 @@
               <a href="#" class="price__basket button button-modal">Корзина</a>
             </div>
           </div>
-
-          <div class="modal modal-order">
-            <h3 class="modal-title">ДОБАВИТЬ В КОРЗИНУ</h3>
-            <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
-              <fieldset class="modal__size">
-                <legend class="modal__legend">Выберите размер:</legend>
-                <ul class="modal__list">
-                  <li class="modal__item">
-                    <input class="modal-order__radio" id="S" type="radio" name="S" value="S">
-                    <label for="S">S</label>
-                  </li>
-                  <li class="modal__item">
-                    <input class="modal-order__radio" id="M" type="radio" name="M" value="M">
-                    <label for="M">M</label>
-                  </li>
-                  <li class="modal__item">
-                    <input class="modal-order__radio" id="L" type="radio" name="L" value="L">
-                    <label for="L">L</label>
-                  </li>
-                </ul>
-                <button class="button">ДОБАВИТЬ</button>
-              </fieldset>
-            </form>
-          </div>
-
         </div>
       </section>
 
       <section class="catalog__video">
         <div class="catalog__video-wrapper">
-          <p class="catalog__video-title">Процесс производства</p>
+          <h3 class="catalog__video-title">Процесс производства</h3>
           <div class="catalog__video-images">
             <img class="catalog__video-image" src="img/video-mobile.png" width="260" height="150" alt="Процесс производства">
             <img class="catalog__video-image-marker" src="img/play-svg.svg" width="101" height="77" alt="Маркер">
           </div>
           <p class="catalog__video-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a href="#" class="button">СДЕЛАТЬ ЗАКАЗ</a>
+          <a href="#" class="button">Сделать заказ</a>
         </div>
       </section>
     </main>
@@ -181,6 +109,30 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal modal-order">
+      <h3 class="modal-title">Добавить в корзину</h3>
+      <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="modal__size">
+          <legend class="modal__legend">Выберите размер:</legend>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <input class="modal__radio" id="S" type="radio" name="S" value="S">
+              <label for="S">S</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__radio" id="M" type="radio" name="M" value="M">
+              <label for="M">M</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__radio" id="L" type="radio" name="L" value="L">
+              <label for="L">L</label>
+            </li>
+          </ul>
+          <button class="button">Добавить</button>
+        </fieldset>
+      </form>
+    </div>
 
   </body>
 </html>
