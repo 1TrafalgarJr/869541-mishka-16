@@ -1,0 +1,25 @@
+.section {
+  display: flex;
+  //justify-content: space-between;
+  flex-flow: column;
+}
+
+.section__interior {
+  background-color: #63d1bb;
+  padding: 30px 185px 30px 29px;
+}
+
+.section__toys {
+  background-color: #56c3b2;
+  padding: 30px 185px 30px 29px;
+}
+
+.section__text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+
+

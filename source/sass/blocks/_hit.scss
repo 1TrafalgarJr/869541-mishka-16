@@ -1,0 +1,51 @@
+.hit {
+  margin: 0;
+  padding: 30px;
+}
+
+.hit__list-baskets {
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.hit__list-best {
+  color: #63d1bb;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  margin: 4px 1px 30px 0;
+}
+
+.hit__list-description {
+  font-size: 15px;
+  line-height: 24px;
+  color: #444;
+  margin: 1px 1px 33px 0;
+}
+
+.hit__list-specifications {
+  margin-bottom: 28px;
+  tr {
+    box-shadow: 0 1px 0 0 #ececec;
+  }
+  td {
+    padding: 10px 10px 10px 0;
+  }
+  .hit__value {
+    width: 37%;
+  }
+}
+
+.hit__price {
+  margin-top: 29px;
+  margin-bottom: 28px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444;
+  text-align: center;
+}
+
+

@@ -1,0 +1,29 @@
+.page-footer {
+  margin-top: 39px;
+  background-color: #ececec;
+}
+
+.page-footer__wrapper {
+  padding: 25px;
+}
+
+.page-footer__copyright {
+  position: relative;
+}
+
+.page-footer__copyright-text::before {
+  content: '';
+  position: absolute;
+  font-size: 0;
+  width: 27px;
+  height: 34px;
+  object-fit: contain;
+  left: 114px;
+  background-color: var(--seafoam-blue);
+  background-image: url("../img/logo-htmlacademy.svg");
+}
+
+.page-footer__copyright-link {
+  font-size: 0;
+}
+
