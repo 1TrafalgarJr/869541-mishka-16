@@ -2,7 +2,7 @@
   margin-top: 61px;
 }
 
-.reviews__wrapper slider {
+.reviews__wrapper .slider {
   padding-left: 30px;
 }
 
@@ -10,13 +10,13 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  color: #000;
+  color: #000000;
 }
 
 .reviews__text {
   font-size: 15px;
   line-height: 30px;
-  color: #444;
+  color: #444444;
   padding: 38px 1px 38px 0;
 }
 
@@ -24,28 +24,29 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
 }
 
 .reviews__author-email {
   font-size: 17px;
   line-height: 30px;
-  color: #444;
+  color: #444444;
 }
 
 .reviews__prev {
   position: absolute;
-  left: 0px;
+  left: 0;
   right: 0;
   top: 20px;
   bottom: 0;
   width: 130px;
   border: 1px solid #ececec;
   font-size: 0;
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    background-image: url(../img/icon-left-arrow.svg);
+    background-image: url('../img/icon-left-arrow.svg');
     background-repeat: no-repeat;
     left: 34px;
     right: 0;
@@ -63,10 +64,11 @@
   width: 130px;
   border: 1px solid #ececec;
   font-size: 0;
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    background-image: url(../img/icon-right-arrow.svg);
+    background-image: url('../img/icon-right-arrow.svg');
     background-repeat: no-repeat;
     left: 34px;
     right: 0;

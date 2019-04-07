@@ -5,16 +5,23 @@
 .form__description {
   font-size: 13px;
   line-height: 24px;
-  color: #444;
+  color: #444444;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.form__type, .form__color, .form__data, .form__phone, .form__email, .form__extra {
+.form__type,
+.form__color,
+.form__data,
+.form__phone,
+.form__email,
+.form__extra {
   padding-left: 30px;
   border: 0;
 }
 
-.form__type-text, .form__color-text, .form__data-text {
+.form__type-text,
+.form__color-text,
+.form__data-text {
   list-style: none;
 }

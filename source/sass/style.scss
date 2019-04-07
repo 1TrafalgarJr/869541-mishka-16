@@ -8,9 +8,6 @@ body {
 }
 
 .container {
-  margin-top: 22px;
-  margin-left: 31px;
-  margin-right: 31px;
   margin: 0 auto;
 }
 
@@ -22,7 +19,14 @@ a {
   display: none;
 }
 
-h2, h3, p, div, span, ul, li, blockquote {
+h2,
+h3,
+p,
+div,
+span,
+ul,
+li,
+blockquote {
   padding: 0;
   margin: 0;
 }

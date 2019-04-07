@@ -1,13 +1,14 @@
 .info {
   position: relative;
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: url("../img/bg-zigzag-line.svg");
+    background-image: url('../img/bg-zigzag-line.svg');
     background-size: 320px 7px;
     background-position-x: -8px;
     background-repeat: repeat-x;
@@ -23,7 +24,7 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  color: #000;
+  color: #000000;
 }
 
 .info__item {
@@ -39,67 +40,67 @@
 }
 
 .info__item-materials::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 22px;
   bottom: 0;
-  background-image: url("../img/icon-feature-flower.svg");
+  background-image: url('../img/icon-feature-flower.svg');
   background-repeat: no-repeat;
 }
 
 .info__item-style::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 27px;
   bottom: 0;
-  background-image: url("../img/icon-feature-money.svg");
+  background-image: url('../img/icon-feature-money.svg');
   background-repeat: no-repeat;
 }
 
 .info__item-like::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 27px;
   bottom: 0;
-  background-image: url("../img/icon-feature-heart.svg");
+  background-image: url('../img/icon-feature-heart.svg');
   background-repeat: no-repeat;
 }
 
 .info__item-knitting::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 27px;
   bottom: 0;
-  background-image: url("../img/icon-feature-ball.svg");
+  background-image: url('../img/icon-feature-ball.svg');
   background-repeat: no-repeat;
 }
 
 .info__item-manufacturer::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 27px;
   bottom: 0;
-  background-image: url("../img/icon-feature-rocket.svg");
+  background-image: url('../img/icon-feature-rocket.svg');
   background-repeat: no-repeat;
 }
 
 .info__item-packaging::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 27px;
   bottom: 0;
-  background-image: url("../img/icon-feature-gift.svg");
+  background-image: url('../img/icon-feature-gift.svg');
   background-repeat: no-repeat;
 }

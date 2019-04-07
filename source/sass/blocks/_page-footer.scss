@@ -12,7 +12,7 @@
 }
 
 .page-footer__copyright-text::before {
-  content: '';
+  content: "";
   position: absolute;
   font-size: 0;
   width: 27px;
@@ -20,7 +20,7 @@
   object-fit: contain;
   left: 114px;
   background-color: var(--seafoam-blue);
-  background-image: url("../img/logo-htmlacademy.svg");
+  background-image: url('../img/logo-htmlacademy.svg');
 }
 
 .page-footer__copyright-link {
