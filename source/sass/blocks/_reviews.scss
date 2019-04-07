@@ -46,7 +46,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url('../img/icon-left-arrow.svg');
+    background-image: url("../img/icon-left-arrow.svg");
     background-repeat: no-repeat;
     left: 34px;
     right: 0;
@@ -68,7 +68,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url('../img/icon-right-arrow.svg');
+    background-image: url("../img/icon-right-arrow.svg");
     background-repeat: no-repeat;
     left: 34px;
     right: 0;
