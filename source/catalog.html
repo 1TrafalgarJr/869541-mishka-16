@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="container">
 
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
@@ -15,16 +18,16 @@
         <div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталаог товаров</a>
+              <a href="catalog.html" class="site-list__link">Каталаог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a href="form.html" class="site-list__link">Вязание на заказ</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
+              <a href="#" class="site-list__link">Поиск по сайту</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
+              <a href="#" class="site-list__link">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -39,13 +42,15 @@
             <a href="#" class="catalog__card-link">
               <img class="catalog__card-image" src="img/photo-1-mobile.png" width="260" height="195" alt="Карточка с товаром">
             </a>
-            <a href="#" class="catalog__card-link">
-              <h3 class="catalog__card-description">Зайчик-попрыгайчик</h3>
-            </a>
-            <p class="catalog__card-specification">Рост 30 см, вес 200 г</p>
-            <div class="price basket">
-              <p class="price__card">1 200 руб.</p>
-              <a href="#" class="price__basket button button-modal">Корзина</a>
+            <div class="catalog__center">
+              <a href="#" class="catalog__card-link">
+                <h3 class="catalog__card-description">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="catalog__card-specification">Рост 30 см, вес 200 г</p>
+              <div class="catalog__price">
+                <p class="catalog__price-card">1 200 руб.</p>
+                <a href="#" class="catalog__price-basket button button-modal">Корзина</a>
+              </div>
             </div>
           </div>
         </div>
@@ -55,13 +60,15 @@
             <a href="#" class="catalog__card-link">
               <img class="catalog__card-image" src="img/photo-2-mobile.png" width="260" height="195" alt="Карточка с товаром">
             </a>
-            <a href="#" class="catalog__card-link">
-              <h3 class="catalog__card-description">Корзинка для белья</h3>
-            </a>
-            <p class="catalog__card-specification">Диаметр 15см, высота 10 см</p>
-            <div class="price basket">
-              <p class="price__card">690 руб.</p>
-              <a href="#" class="price__basket button button-modal">Корзина</a>
+            <div class="catalog__center">
+              <a href="#" class="catalog__card-link">
+                <h3 class="catalog__card-description">Корзинка для белья</h3>
+              </a>
+              <p class="catalog__card-specification">Диаметр 15см, высота 10 см</p>
+              <div class="catalog__price">
+                <p class="catalog__price-card">690 руб.</p>
+                <a href="#" class="catalog__price-basket button button-modal">Корзина</a>
+              </div>
             </div>
           </div>
         </div>
@@ -71,13 +78,15 @@
             <a href="#" class="catalog__card-link">
               <img class="catalog__card-image" src="img/photo-3-mobile.png" width="260" height="195" alt="Карточка с товаром">
             </a>
-            <a href="#" class="catalog__card-link">
-              <h3 class="catalog__card-description">Большая корзинка для игрушек</h3>
-            </a>
-            <p class="catalog__card-specification">Диаметр 30 см, высота 30 см</p>
-            <div class="price basket">
-              <p class="price__card">1 500 руб.</p>
-              <a href="#" class="price__basket button button-modal">Корзина</a>
+            <div class="catalog__center">
+              <a href="#" class="catalog__card-link">
+                <h3 class="catalog__card-description">Большая корзинка для игрушек</h3>
+              </a>
+              <p class="catalog__card-specification">Диаметр 30 см, высота 30 см</p>
+              <div class="catalog__price">
+                <p class="catalog__price-card">1 500 руб.</p>
+                <a href="#" class="catalog__price-basket button button-modal">Корзина</a>
+              </div>
             </div>
           </div>
         </div>
@@ -111,9 +120,9 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a href="#" class="copyright__link">HTML Academy</a>
+        <div class="page-footer__copyright">
+          <b class="page-footer__copyright-text">Разработано</b>
+          <a href="#" class="page-footer__copyright-link">HTML Academy</a>
         </div>
       </div>
     </footer>

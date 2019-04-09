@@ -1,0 +1,49 @@
+.contacts {
+  position: relative;
+  padding-left: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 320px 7px;
+    background-position-x: -8px;
+    background-repeat: repeat-x;
+  }
+}
+
+.contacts__text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 43px;
+}
+
+.contacts__list-item {
+  list-style: none;
+}
+
+.contacts__value {
+  margin: 31px 1px 10px 1px;
+  position: relative;
+  display: inline-block;
+  width: 7%;
+}
+
+.contacts__field {
+  margin: 31px 1px 10px 1px;
+  position: relative;
+  display: inline-block;
+}
+
+.contacts__map {
+  margin-top: 42px;
+}
+
+.contacts__map-image {
+  margin-bottom: 39px;
+}

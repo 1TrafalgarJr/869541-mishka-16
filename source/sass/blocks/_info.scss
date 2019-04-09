@@ -1,0 +1,106 @@
+.info {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 320px 7px;
+    background-position-x: -8px;
+    background-repeat: repeat-x;
+  }
+}
+
+.info__wrapper {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.info__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.info__item {
+  position: relative;
+  padding-top: 85px;
+  list-style: none;
+}
+
+.info__text {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.info__item-materials::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 22px;
+  bottom: 0;
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+}
+
+.info__item-style::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27px;
+  bottom: 0;
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
+}
+
+.info__item-like::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27px;
+  bottom: 0;
+  background-image: url("../img/icon-feature-heart.svg");
+  background-repeat: no-repeat;
+}
+
+.info__item-knitting::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27px;
+  bottom: 0;
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
+}
+
+.info__item-manufacturer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27px;
+  bottom: 0;
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+}
+
+.info__item-packaging::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27px;
+  bottom: 0;
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
+}
