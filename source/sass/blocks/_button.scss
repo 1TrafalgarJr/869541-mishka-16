@@ -1,15 +1,16 @@
 .button {
   display: block;
   box-sizing: border-box;
+  padding: 15px 10px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: #444444;
-  text-transform: uppercase;
-  max-width: 248px;
-  padding: 14px 50px;
-  text-align: center;
-  margin: 0 auto;
   border: 2px solid #444444;
   cursor: pointer;
+  background-color: #ffffff;
 }

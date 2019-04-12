@@ -3,6 +3,25 @@
   font-size: 27px;
   line-height: 30px;
   background-color: #f1f1f1;
-  padding: 75px 42px 75px 43px;
+  padding: 70px 30px 70px 30px;
   text-align: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .page-main__title {
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 50px;
+    color: #000000;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-main__title {
+    font-weight: bold;
+    font-size: 53px;
+    line-height: 57px;
+    color: #000000;
+  }
 }

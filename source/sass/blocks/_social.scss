@@ -1,5 +1,8 @@
 .social__list {
   position: relative;
+  padding-bottom: 20px;
+  margin: 0;
+  border-bottom: 1px solid #000000;
 }
 
 .social__item {
@@ -13,7 +16,7 @@
 .social__link--inst::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50px;
   right: 0;
   top: -5px;
   bottom: 0;
@@ -25,7 +28,7 @@
 .social__link--facebook::before {
   content: "";
   position: absolute;
-  left: 55px;
+  left: 118px;
   right: 0;
   top: -9px;
   bottom: 0;
@@ -37,11 +40,32 @@
 .social__link--twitter::before {
   content: "";
   position: absolute;
-  left: 99px;
+  left: 175px;
   right: 0;
   top: -5px;
   bottom: 0;
   width: 23px;
   height: 20px;
   background-image: url("../img/icon-twitter.svg");
+}
+
+@media (min-width: 768px) {
+  .social__list {
+    border: 0;
+  }
+
+  .social__link--inst::before {
+    left: -19px;
+    top: 16px;
+  }
+
+  .social__link--facebook::before {
+    left: 44px;
+    top: 13px;
+  }
+
+  .social__link--twitter::before {
+    left: 99px;
+    top: 17px;
+  }
 }
