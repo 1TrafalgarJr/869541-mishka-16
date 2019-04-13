@@ -1,13 +1,30 @@
-.form {
-  padding-left: 30px;
-}
-
 .form__description {
   font-size: 13px;
   line-height: 24px;
   color: #444444;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 0 30px;
+  margin: 0 auto 20px;
+}
+
+.form {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form,
+.form__type,
+.form__color,
+.form__data,
+.form__phone,
+.form__email,
+.form__extra,
+.form__notes {
+  position: relative;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+  border: 0;
+  box-sizing: border-box;
 }
 
 .form__type,
@@ -16,12 +33,183 @@
 .form__phone,
 .form__email,
 .form__extra {
-  padding-left: 30px;
-  border: 0;
+  padding: 20px 30px 20px 30px;
+}
+
+.form__legend {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+
+.form__type-item {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form__type-text,
 .form__color-text,
 .form__data-text {
+  position: relative;
+  max-width: 260px;
   list-style: none;
+}
+
+.form__radio,
+.form__checkbox,
+.form__feedback-text {
+  position: relative;
+  padding: 10px 0 10px 10px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__data-text {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__feedback-text {
+  display: block;
+}
+
+.form__phone-tel {
+  position: relative;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__email-email {
+  position: relative;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__extra-control {
+  min-height: 142px;
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__notes {
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  padding-bottom: 10px;
+}
+
+.form__type-button {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .form__description {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 0 auto 50px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  .form__type,
+  .form__color,
+  .form__data,
+  .form__phone,
+  .form__email,
+  .form__extra {
+    padding: 50px;
+  }
+
+  .form__type-item {
+    padding-left: 200px;
+  }
+
+  .form__color {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__color-item {
+    padding-left: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .form__data-item {
+    padding-left: 200px;
+  }
+
+  .form__data-text {
+    display: flex;
+  }
+
+  .form__phone,
+  .form__email {
+    background-color: #f1f1f1;
+  }
+
+  .form__phone-item,
+  .form__email-item {
+    padding-left: 200px;
+    display: flex;
+  }
+
+  .form__extra-item {
+    display: flex;
+  }
+
+  .form__extra-control {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__type-button {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .form__notes {
+    order: 1;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__button {
+    width: 230px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .form__description {
+    padding: 0;
+    max-width: 750px;
+  }
 }

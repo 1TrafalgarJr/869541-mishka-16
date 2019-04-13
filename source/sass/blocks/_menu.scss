@@ -1,6 +1,129 @@
+.menu {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+}
+
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 76px 0 0;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 489px;
+}
+
 .menu__item {
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: auto;
+  width: 100%;
+  text-align: center;
   font-weight: bold;
   font-size: 26.5px;
   line-height: 29.5px;
   color: #010000;
+  padding-right: 39px;
+  padding-left: 39px;
+}
+
+.menu__section {
+  position: relative;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.menu__interior {
+  position: relative;
+  display: block;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #63d1bb;
+}
+
+.menu__text {
+  display: block;
+}
+
+.menu__toys {
+  position: relative;
+  display: block;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #56c3b2;
+}
+
+@media (min-width: 768px) {
+  .menu__header {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .menu__item {
+    padding: 0;
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .menu__content {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .menu__section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu__section-item {
+    width: 50%;
+  }
+
+  .menu__interior {
+    padding: 35px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .menu__toys {
+    padding: 35px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .menu {
+    background-color: #f9f9f9;
+  }
+
+  .menu__header {
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
+
+  .menu__item {
+    font-weight: bold;
+    font-size: 53px;
+    line-height: 57px;
+    padding: 0 100px;
+  }
 }
