@@ -7,7 +7,7 @@
 
 .info {
   position: relative;
-  padding-top: 10px;
+  padding-top: 34px;
   padding-bottom: 10px;
 
   &::after {
@@ -111,6 +111,10 @@
   .info {
     padding-left: 50px;
     padding-right: 50px;
+
+    &::after {
+      background-size: auto;
+    }
   }
 
   .info__title {
