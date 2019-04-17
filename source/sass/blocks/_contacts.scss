@@ -30,7 +30,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  padding-top: 43px;
+  padding-top: 5px;
   position: relative;
 }
 
@@ -58,8 +58,8 @@
 }
 
 .contacts__field {
-  width: 190px;
-  margin-left: 16px;
+  width: 156px;
+  margin-left: 21px;
 }
 
 .contacts__link {
@@ -71,6 +71,7 @@
   position: relative;
   width: 322px;
   height: 457px;
+  margin-top: 8px;
 }
 
 .contacts__map-image {
@@ -99,8 +100,8 @@
 
 @media (min-width: 768px) {
   .contacts {
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 67px;
+    padding-bottom: 66px;
 
     &::before {
       background-size: auto;
@@ -126,19 +127,19 @@
     &::before {
       content: "";
       position: absolute;
-      right: 0;
+      right: 3px;
+      top: -10px;
       width: 47px;
       height: 81px;
       background-image: url("../img/icon-flag.svg");
-
     }
   }
 
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 29px;
+    margin-bottom: 26px;
     max-width: 668px;
     font-size: 17px;
     line-height: 30px;
@@ -150,8 +151,8 @@
   }
 
   .contacts__field {
-    margin-left: 20px;
-    width: 250px;
+    margin-left: 19px;
+    width: 254px;
   }
 
   .contacts__map-image {
@@ -160,12 +161,12 @@
   }
 
   .contacts__map-image-marker {
-    top: 124px;
-    left: 365px;
+    top: 138px;
+    left: 363px;
   }
 
   .contacts__button {
-    padding-top: 42px;
+    padding-top: 49px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 40px;
@@ -181,16 +182,17 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 70px 50px 100px 50px;
+    padding: 89px 50px 142px 50px;
     width: 1050px;
   }
 
   .contacts__wrapper {
     margin: 0;
     width: 45%;
-    padding-top: 5px;
+    padding-top: 73px;
     padding-bottom: 10px;
-    padding-left: 117px;
+    padding-left: 168px;
+    padding-right: 0;
   }
 
   .contacts__text {
@@ -205,12 +207,24 @@
     }
   }
 
+  .contacts__list {
+    max-width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__list-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .contacts__value {
     margin-bottom: 30px;
   }
 
   .contacts__field {
     margin-bottom: 30px;
+    margin-left: 29px;
     width: 220px;
   }
 
@@ -232,7 +246,7 @@
 
   .contacts__button-item {
     width: 230px;
-    margin-top: -106px;
-    margin-left: -450px;
+    margin-top: -107px;
+    margin-left: -399px;
   }
 }

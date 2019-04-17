@@ -1,6 +1,6 @@
 .best {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 24px;
   position: relative;
 }
 
@@ -28,7 +28,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  margin: 4px 1px 30px 0;
+  margin: 4px 1px 23px 0;
   text-transform: uppercase;
 }
 
@@ -36,7 +36,7 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
-  margin: 1px 1px 33px 0;
+  margin: 1px 1px 18px 0;
 }
 
 .best-section {
@@ -70,8 +70,8 @@
 }
 
 .best__price {
-  margin-top: 29px;
-  margin-bottom: 28px;
+  margin-top: 19px;
+  margin-bottom: 25px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -85,14 +85,14 @@
   }
 
   .best {
-    padding: 43px 50px 80px 50px;
+    padding: 22px 50px 50px 50px;
   }
 
   .best__list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     padding: 2px 0;
   }
 
@@ -114,11 +114,12 @@
   }
 
   .best__section {
-    padding-right: 378px;
+    padding-right: 376px;
     position: relative;
   }
 
   .best__list-description {
+    margin-bottom: 35px;
     font-size: 17px;
     line-height: 30px;
     color: #444444;
@@ -128,28 +129,36 @@
     position: absolute;
     width: 333px;
     height: 404px;
-    top: 6px;
-    left: 333px;
+    top: 7px;
+    left: 334px;
   }
 
   .best__list-specifications {
-    margin-bottom: 51px;
+    margin-bottom: 57px;
+  }
+
+  .best__price {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #444444;
+    margin-bottom: 33px;
   }
 }
 
 @media (min-width: 1150px) {
   .best {
-    padding-top: 100px;
-    padding-bottom: 60px;
+    padding-top: 104px;
+    padding-bottom: 74px;
   }
 
   .best__list {
-    padding-left: 10px;
-    margin-bottom: 52px;
+    padding-left: 16px;
+    margin-bottom: 31px;
   }
 
   .best__list-description {
-    margin-bottom: 66px;
+    margin-bottom: 48px;
   }
 
   .best__list-baskets {
@@ -170,14 +179,18 @@
   }
 
   .best__list-specifications {
-    margin-bottom: 100px;
+    margin-bottom: 110px;
   }
 
   .best__image-wrapper {
     z-index: -1;
     width: 525px;
     height: 636px;
-    top: -138px;
+    top: -159px;
     right: -191px;
+  }
+
+  .best__value {
+    width: 35%;
   }
 }

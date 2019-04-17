@@ -19,7 +19,7 @@
   .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 51px;
+    padding-left: 50px;
     font-weight: bold;
     font-size: 15px;
     line-height: 24px;
@@ -33,12 +33,12 @@
 
   .site-navigation__flex {
     display: flex;
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     text-decoration: none;
   }
 
   .site-navigation__link {
-    padding: 24px 35px 10px 0;
+    padding: 17px 27px 10px 0;
     border-bottom: none;
   }
 }

@@ -3,9 +3,15 @@
   font-size: 27px;
   line-height: 30px;
   background-color: #f1f1f1;
-  padding: 70px 30px 70px 30px;
+  padding: 31px 30px 76px 30px;
   text-align: center;
   position: relative;
+}
+
+@media (min-width: 320px) {
+  .page-main__title {
+    padding: 70px 30px 76px 30px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -14,6 +20,7 @@
     font-size: 43px;
     line-height: 50px;
     color: #000000;
+    padding: 31px 30px 76px 30px;
   }
 }
 
@@ -23,5 +30,6 @@
     font-size: 53px;
     line-height: 57px;
     color: #000000;
+    padding: 43px 30px 100px 30px;
   }
 }

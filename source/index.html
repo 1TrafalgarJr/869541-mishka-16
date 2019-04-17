@@ -11,7 +11,7 @@
   <body class="container">
 
     <header class="page-header page-header__item">
-      <nav class="page-header__nav">
+      <nav class="page-header__nav page-header__background">
         <div class="page-header__logo">
           <a class="page-header__logo-image">
             <picture>
@@ -21,7 +21,7 @@
             </picture>
           </a>
         </div>
-        <ul class="page-header__site-list site-navigation site-navigation__flex">
+        <ul class="page-header__site-list site-navigation">
           <li class="site-navigation__item site-navigation__item-catalog">
             <a href="catalog.html" class="site-navigation__link">Каталаог товаров</a>
           </li>
@@ -31,15 +31,15 @@
         </ul>
         <ul class="page-header__user-list user-navigation">
           <li class="user-navigation__item">
-            <a href="#" class="user-navigation__link user-navigation__text">
-              <span>Поиск по сайту</span>
+            <a href="#" class="user-navigation__link user-navigation__text user-navigation__search">
+              <span class="user-navigation__searchs">Поиск по сайту</span>
             </a>
           </li>
           <li class="user-navigation__item">
             <a href="#" class="user-navigation__link user-navigation__basket">Корзина: пока пуста</a>
           </li>
         </ul>
-        <ul class="page-header__stock-list stock-navigation">
+        <ul class="page-header__stock-list stock-navigation page-header__background">
           <li class="stock-navigation__item stock-navigation_item-first">
             <a href="#" class="stock-navigation__link">Новые поступления</a>
           </li>
@@ -47,7 +47,7 @@
             <a href="#" class="stock-navigation__link">Распродажа</a>
           </li>
         </ul>
-        <span class="page-header__delivery">Бесплатная доставка по России</span>
+        <span class="page-header__delivery page-header__background">Бесплатная доставка по России</span>
       </nav>
     </header>
 
@@ -144,8 +144,11 @@
           </blockquote>
         </div>
         <p class="reviews__toggles slider__toggles">
-          <button type="button" class="reviews__prev">Предыдущий отзыв</button>
-          <button type="button" class="reviews__next">Следующий отзыв</button>
+          <button type="button" class="reviews__prev">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button type="button" class="reviews__next">
+            <span class="visually-hidden">Следующий отзыв</span></button>
         </p>
         <a href="#" class="reviews__write-title button">Написать</a>
       </section>

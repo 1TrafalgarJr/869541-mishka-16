@@ -16,7 +16,7 @@
 .social__link--inst::before {
   content: "";
   position: absolute;
-  left: 50px;
+  left: 56px;
   right: 0;
   top: -5px;
   bottom: 0;
@@ -40,7 +40,7 @@
 .social__link--twitter::before {
   content: "";
   position: absolute;
-  left: 175px;
+  left: 166px;
   right: 0;
   top: -5px;
   bottom: 0;
@@ -55,17 +55,17 @@
   }
 
   .social__link--inst::before {
-    left: -19px;
-    top: 16px;
+    left: -11px;
+    top: 18px;
   }
 
   .social__link--facebook::before {
-    left: 44px;
+    left: 49px;
     top: 13px;
   }
 
   .social__link--twitter::before {
     left: 99px;
-    top: 17px;
+    top: 18px;
   }
 }
