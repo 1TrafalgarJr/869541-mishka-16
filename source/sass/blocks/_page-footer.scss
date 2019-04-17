@@ -101,10 +101,6 @@
 }
 
 @media (min-width: 1150px) {
-  .page-footer__catalog {
-    margin-top: 160px;
-  }
-
   .page-footer__wrapper {
     box-sizing: border-box;
     margin: 0 auto;
@@ -118,12 +114,12 @@
     margin-top: 28px;
   }
 
+  .page-footer__form {
+    margin-top: -8px;
+  }
+
   .page-footer__catalog {
     margin-top: 106px;
     background-color: #f1f1f1;
-  }
-
-  .page-footer__form {
-    margin-top: -8px;
   }
 }

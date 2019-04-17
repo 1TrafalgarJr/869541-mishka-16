@@ -144,7 +144,7 @@
   }
 
   .reviews__author-name {
-    padding-top: 10px;
+    padding-top: 27px;
     padding-bottom: 4px;
     font-weight: bold;
     font-size: 18px;
@@ -168,14 +168,14 @@
     width: 175px;
     position: absolute;
     right: 50px;
-    margin: 27px -51px auto;
+    margin: 19px -1px auto;
   }
 
   .reviews__prev {
     border: 0;
 
     &::before {
-      right: 91px;
+      right: 93px;
       top: 30px;
     }
   }
@@ -184,7 +184,7 @@
     border: 0;
 
     &::before {
-      right: 17px;
+      right: 19px;
       top: 30px;
     }
   }
@@ -197,6 +197,15 @@
     min-width: 320px;
     max-width: 1050px;
     padding: 50px 79px 156px 171px;
+  }
+
+  .reviews__author-name {
+    padding-top: 10px;
+  }
+  
+  .reviews__write-title {
+    top: 60px;
+    right: 1px;
   }
 
   .reviews__title {
