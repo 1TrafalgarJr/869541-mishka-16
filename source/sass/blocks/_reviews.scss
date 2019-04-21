@@ -105,7 +105,7 @@
 
   .reviews__wrapper {
     padding: 0;
-    display: contents;
+    display: inline;
   }
 }
 
@@ -121,14 +121,16 @@
 
   .reviews__wrapper {
     padding: 0;
+    order: 2;
   }
 
   .reviews__title {
     font-weight: bold;
     font-size: 43px;
     line-height: 50px;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-bottom: 20px;
+    order: 1;
   }
 
   .reviews__item {
@@ -161,31 +163,38 @@
   .reviews__toggles {
     position: absolute;
     right: 50px;
-    bottom: 101px;
+    bottom: 103px;
+    width: 157px;
+    height: 30px;
+    margin: 10px 10px 33px;
   }
 
   .reviews__write-title {
-    width: 175px;
-    position: absolute;
-    right: 50px;
-    margin: 19px -1px auto;
+    padding: 14px 38px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    order: 1;
+    margin: 24px 1px 8px auto;
   }
 
   .reviews__prev {
     border: 0;
+    height: 30px;
 
     &::before {
-      right: 93px;
-      top: 30px;
+      right: 19px;
+      top: 1px;
     }
   }
 
   .reviews__next {
     border: 0;
+    height: 30px;
 
     &::before {
-      right: 19px;
-      top: 30px;
+      right: 9px;
+      top: 1px;
     }
   }
 }
@@ -196,16 +205,21 @@
     margin: 0 auto;
     min-width: 320px;
     max-width: 1050px;
-    padding: 50px 79px 156px 171px;
+    padding: 50px 0 156px 171px;
   }
 
   .reviews__author-name {
     padding-top: 10px;
   }
 
+  .reviews__text {
+    padding-right: 92px;
+  }
+
   .reviews__write-title {
     top: 60px;
     right: 1px;
+    margin: 30px 1px 8px auto;
   }
 
   .reviews__title {
@@ -219,13 +233,28 @@
     padding: 5px 1px 2px 4px;
   }
 
-  .reviews__prev::before {
-    right: 44px;
-    top: -8px;
+  .reviews__toggles {
+    width: 160px;
+    height: 40px;
+    right: -1px;
+    bottom: 130px;
   }
 
-  .reviews__next::before {
-    right: -32px;
-    top: -7px;
+  .reviews__prev {
+    height: 40px;
+
+    &::before {
+      right: 18px;
+      top: 3px;
+    }
+  }
+
+  .reviews__next {
+    height: 40px;
+
+    &::before {
+      right: 9px;
+      top: 3px;
+    }
   }
 }

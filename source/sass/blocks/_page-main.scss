@@ -6,6 +6,9 @@
   padding: 31px 30px 76px 30px;
   text-align: center;
   position: relative;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1050px;
 }
 
 @media (min-width: 320px) {
@@ -30,6 +33,6 @@
     font-size: 53px;
     line-height: 57px;
     color: #000000;
-    padding: 43px 30px 100px 30px;
+    padding: 43px 50px 100px 50px;
   }
 }

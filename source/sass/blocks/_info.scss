@@ -59,7 +59,7 @@
   }
 }
 
-.info__item-materials::before {
+.info__item--materials::before {
   left: 6px;
   top: 0;
   width: 32px;
@@ -67,7 +67,7 @@
   background-image: url("../img/icon-feature-flower.svg");
 }
 
-.info__item-style::before {
+.info__item--style::before {
   left: 0;
   top: 0;
   width: 47px;
@@ -75,7 +75,7 @@
   background-image: url("../img/icon-feature-money.svg");
 }
 
-.info__item-like::before {
+.info__item--like::before {
   left: 6px;
   top: 5px;
   width: 34px;
@@ -83,7 +83,7 @@
   background-image: url("../img/icon-feature-heart.svg");
 }
 
-.info__item-knitting::before {
+.info__item--knitting::before {
   left: 0;
   top: 0;
   width: 35px;
@@ -91,7 +91,7 @@
   background-image: url("../img/icon-feature-ball.svg");
 }
 
-.info__item-manufacturer::before {
+.info__item--manufacturer::before {
   left: -5px;
   top: 0;
   width: 55px;
@@ -99,7 +99,7 @@
   background-image: url("../img/icon-feature-rocket.svg");
 }
 
-.info__item-packaging::before {
+.info__item--packaging::before {
   left: 1px;
   top: 0;
   width: 33px;
@@ -143,7 +143,7 @@
     padding-top: 62px;
   }
 
-  .info__item-style {
+  .info__item--style {
     order: 2;
 
     &::before {
@@ -151,7 +151,7 @@
     }
   }
 
-  .info__item-like {
+  .info__item--like {
     order: 4;
 
     &::before {
@@ -160,7 +160,7 @@
     }
   }
 
-  .info__item-knitting {
+  .info__item--knitting {
     order: 1;
 
     &::before {
@@ -169,7 +169,7 @@
     }
   }
 
-  .info__item-manufacturer {
+  .info__item--manufacturer {
     order: 3;
 
     &::before {
@@ -178,7 +178,7 @@
     }
   }
 
-  .info__item-packaging {
+  .info__item--packaging {
     order: 5;
 
     &::before {
@@ -187,7 +187,7 @@
     }
   }
 
-  .info__item-materials::before {
+  .info__item--materials::before {
     left: 9px;
     top: 8px;
   }
