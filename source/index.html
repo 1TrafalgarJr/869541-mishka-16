@@ -11,7 +11,7 @@
   <body class="container">
 
     <header class="page-header page-header__item">
-      <nav class="page-header__nav">
+      <nav class="page-header__nav page-header__background">
         <div class="page-header__logo">
           <a class="page-header__logo-image">
             <picture>
@@ -21,7 +21,7 @@
             </picture>
           </a>
         </div>
-        <ul class="page-header__site-list site-navigation site-navigation__flex">
+        <ul class="page-header__site-list site-navigation">
           <li class="site-navigation__item site-navigation__item-catalog">
             <a href="catalog.html" class="site-navigation__link">Каталаог товаров</a>
           </li>
@@ -31,15 +31,15 @@
         </ul>
         <ul class="page-header__user-list user-navigation">
           <li class="user-navigation__item">
-            <a href="#" class="user-navigation__link user-navigation__text">
-              <span>Поиск по сайту</span>
+            <a href="#" class="user-navigation__link user-navigation__text user-navigation__search">
+              <span class="user-navigation__searchs">Поиск по сайту</span>
             </a>
           </li>
           <li class="user-navigation__item">
             <a href="#" class="user-navigation__link user-navigation__basket">Корзина: пока пуста</a>
           </li>
         </ul>
-        <ul class="page-header__stock-list stock-navigation">
+        <ul class="page-header__stock-list stock-navigation page-header__background">
           <li class="stock-navigation__item stock-navigation_item-first">
             <a href="#" class="stock-navigation__link">Новые поступления</a>
           </li>
@@ -47,7 +47,7 @@
             <a href="#" class="stock-navigation__link">Распродажа</a>
           </li>
         </ul>
-        <span class="page-header__delivery">Бесплатная доставка по России</span>
+        <span class="page-header__delivery page-header__background">Бесплатная доставка по России</span>
       </nav>
     </header>
 
@@ -112,22 +112,22 @@
         <div class="info__wrapper">
           <h2 class="info__title">Коротко о нас:</h2>
           <ul class="info__list">
-            <li class="info__item info__item-materials">
+            <li class="info__item info__item--materials">
               <p class="info__text">Экологически чистые материалы</p>
             </li>
-            <li class="info__item info__item-style">
+            <li class="info__item info__item--style">
               <p class="info__text">Скандинавский стиль по российской цене</p>
             </li>
-            <li class="info__item info__item-like">
+            <li class="info__item info__item--like">
               <p class="info__text">Увеличивает лайки на фотографиях</p>
             </li>
-            <li class="info__item info__item-knitting">
+            <li class="info__item info__item--knitting">
               <p class="info__text">Связано вручную с любовью и умилением</p>
             </li>
-            <li class="info__item info__item-manufacturer">
+            <li class="info__item info__item--manufacturer">
               <p class="info__text">Поддержка отечественного производителя</p>
             </li>
-            <li class="info__item info__item-packaging">
+            <li class="info__item info__item--packaging">
               <p class="info__text">Поставляется в подарочной упаковке</p>
             </li>
           </ul>
@@ -135,8 +135,8 @@
       </section>
 
       <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__wrapper reviews__wrapper-slider">
-          <h2 class="reviews__title">Отзывы</h2>
           <blockquote class="reviews__item slider__item">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="reviews__author-name">Анастасия Красильникова</cite>
@@ -144,8 +144,11 @@
           </blockquote>
         </div>
         <p class="reviews__toggles slider__toggles">
-          <button type="button" class="reviews__prev">Предыдущий отзыв</button>
-          <button type="button" class="reviews__next">Следующий отзыв</button>
+          <button type="button" class="reviews__prev">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button type="button" class="reviews__next">
+            <span class="visually-hidden">Следующий отзыв</span></button>
         </p>
         <a href="#" class="reviews__write-title button">Написать</a>
       </section>
@@ -183,28 +186,28 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer__index">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="#">
           <img src="img/logo-footer.svg" alt="Мишка">
         </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="#" class="social__link social__link--inst">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--facebook">Мы на Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--twitter">Мы в Твиттере</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <b class="page-footer__copyright-text">Разработано</b>
-          <a href="#" class="page-footer__copyright-link">HTML Academy</a>
-        </div>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--inst"><img src="img/icon-insta.svg">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook"><img src="img/icon-fb.svg">Мы на Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter"><img src="img/icon-twitter.svg">Мы в Твиттере</a>
+          </li>
+        </ul>
+        <p class="page-footer__copyright">
+          <a class="page-footer__copyright--link" href="#">
+            <span class="page-footer__copyright--text">Разработано</span>
+          </a>
+          <img class="page-footer__copyright--image" src="img/logo-htmlacademy.svg" width="27" height="34">
+        </p>
       </div>
     </footer>
 

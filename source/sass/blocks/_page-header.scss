@@ -48,9 +48,10 @@
   }
 
   .page-header__logo {
-    padding: 22px 0 20px 51px;
+    padding: 22px 0 20px 50px;
     flex-grow: 1;
     justify-content: flex-start;
+    background-color: #ffffff;
   }
 
   .page-header__logo-image,
@@ -66,13 +67,19 @@
   .page-header__delivery {
     display: block;
     order: 2;
-    background-color: #f9f9f9;
-    padding: 24px 50px 20px 50px;
+    line-height: 24px;
+    font-size: 15px;
+    background-color: #f1f1f1;
+    padding: 18px 50px 20px 50px;
     width: 48%;
   }
 
   .page-header__form {
     background-color: #f1f1f1;
+  }
+
+  .page-header__background {
+    background-color: #f9f9f9;
   }
 }
 
@@ -113,5 +120,10 @@
     order: 4;
     width: 500px;
     margin-left: auto;
+    padding: 9px 50px;
+  }
+
+  .page-header__nav {
+    background-color: #f1f1f1;
   }
 }

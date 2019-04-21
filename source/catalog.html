@@ -31,8 +31,8 @@
         </ul>
         <ul class="page-header__user-list user-navigation">
           <li class="user-navigation__item">
-            <a href="#" class="user-navigation__link user-navigation__text">
-              <span>Поиск по сайту</span>
+            <a href="#" class="user-navigation__link user-navigation__text user-navigation__search">
+              <span class="user-navigation__searchs">Поиск по сайту</span>
             </a>
           </li>
           <li class="user-navigation__item">
@@ -66,13 +66,13 @@
                 <!-- <img class="catalog__card-image" src="img/photo-1-mobile.png" width="260" height="195" alt="Карточка с товаром"> -->
               </a>
               <div class="catalog__center">
-                <a href="#" class="catalog__card-link">
+                <a href="#" class="catalog__card-link catalog__card-item">
                   <h3 class="catalog__card-description">Зайчик-попрыгайчик</h3>
                 </a>
                 <p class="catalog__card-specification">Рост 30 см, вес 200 г</p>
                 <div class="catalog__price">
                   <p class="catalog__price-card">1 200 руб.</p>
-                  <a href="#" class="catalog__price-basket button button-modal">Корзина</a>
+                  <a href="#" class="catalog__price-basket button-modal" aria-label="Корзина"></a>
                 </div>
               </div>
             </div>
@@ -89,13 +89,13 @@
                 <!--  <img class="catalog__card-image" src="img/photo-2-mobile.png" width="260" height="195" alt="Карточка с товаром"> -->
               </a>
               <div class="catalog__center">
-                <a href="#" class="catalog__card-link">
+                <a href="#" class="catalog__card-link catalog__card-item">
                   <h3 class="catalog__card-description">Корзинка для белья</h3>
                 </a>
                 <p class="catalog__card-specification">Диаметр 15см, высота 10 см</p>
                 <div class="catalog__price">
                   <p class="catalog__price-card">690 руб.</p>
-                  <a href="#" class="catalog__price-basket button button-modal">Корзина</a>
+                  <a href="#" class="catalog__price-basket button-modal" aria-label="Корзина"></a>
                 </div>
               </div>
             </div>
@@ -112,13 +112,13 @@
                 <!--  <img class="catalog__card-image" src="img/photo-3-mobile.png" width="260" height="195" alt="Карточка с товаром"> -->
               </a>
               <div class="catalog__center">
-                <a href="#" class="catalog__card-link">
+                <a href="#" class="catalog__card-link catalog__card-item">
                   <h3 class="catalog__card-description">Большая корзинка для игрушек</h3>
                 </a>
                 <p class="catalog__card-specification">Диаметр 30 см, высота 30 см</p>
                 <div class="catalog__price">
                   <p class="catalog__price-card">1 500 руб.</p>
-                  <a href="#" class="catalog__price-basket button button-modal">Корзина</a>
+                  <a href="#" class="catalog__price-basket button-modal" aria-label="Корзина"></a>
                 </div>
               </div>
             </div>
@@ -146,28 +146,28 @@
       </section>
     </main>
 
-    <footer class="page-footer page-footer__catalog">
+    <footer class="page-footer page-footer__index page-footer__catalog">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="#">
           <img src="img/logo-footer.svg" alt="Мишка">
         </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="#" class="social__link social__link--inst">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--facebook">Мы на Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--twitter">Мы в Твиттере</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <b class="page-footer__copyright-text">Разработано</b>
-          <a href="#" class="page-footer__copyright-link">HTML Academy</a>
-        </div>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--inst"><img src="img/icon-insta.svg">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook"><img src="img/icon-fb.svg">Мы на Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter"><img src="img/icon-twitter.svg">Мы в Твиттере</a>
+          </li>
+        </ul>
+        <p class="page-footer__copyright">
+          <a class="page-footer__copyright--link" href="#">
+            <span class="page-footer__copyright--text">Разработано</span>
+          </a>
+          <img class="page-footer__copyright--image" src="img/logo-htmlacademy.svg" width="27" height="34">
+        </p>
       </div>
     </footer>
 

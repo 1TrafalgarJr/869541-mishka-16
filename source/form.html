@@ -10,12 +10,12 @@
   </head>
   <body class="container">
 
-    <header class="page-header page-header__item page-header__form">
+    <header class="page-header page-header__item">
       <nav class="page-header__nav">
         <div class="page-header__logo">
           <a class="page-header__logo-image" href="index.html">
             <picture>
-              <source  media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="page-header__logo-item" src="img/mishka-logo-mobile.svg" width="85" height="35" alt="Мишка">
             </picture>
@@ -31,8 +31,8 @@
         </ul>
         <ul class="page-header__user-list user-navigation">
           <li class="user-navigation__item">
-            <a href="#" class="user-navigation__link user-navigation__text">
-              <span>Поиск по сайту</span>
+            <a href="#" class="user-navigation__link user-navigation__text user-navigation__search">
+              <span class="user-navigation__searchs">Поиск по сайту</span>
             </a>
           </li>
           <li class="user-navigation__item">
@@ -59,10 +59,12 @@
           <form class="form__filters" method="post" action="https://echo.htmlacademy.ru">
 
             <fieldset class="form__type">
-              <legend class="form__legend">ТИП</legend>
+              <legend class="form__legend">
+                <span class="form__legend-text">ТИП</span>
+              </legend>
               <div class="form__type-item">
                 <ul class="form__type-list">
-                  <li class="form__type-text">
+                  <li class="form__type-text form__type-style">
                     <input class="form__type-radio" id="interior" type="radio" name="interior" value="Аксессуар для интерьера">
                     <label for="interior" class="form__radio">Аксессуар для интерьера</label>
                   </li>
@@ -75,7 +77,9 @@
             </fieldset>
 
             <fieldset class="form__color">
-              <legend class="form__legend">ЦВЕТ</legend>
+              <legend class="form__legend">
+                <span class="form__legend-text">ЦВЕТ</span>
+              </legend>
               <div class="form__color-item">
                 <ul class="form__color-list">
                   <li class="form__color-text">
@@ -107,45 +111,48 @@
             </fieldset>
 
             <fieldset class="form__data">
-              <legend class="form__legend">ФИО</legend>
+              <legend class="form__legend">
+                <span class="form__legend-text">ФИО</span>
+              </legend>
               <div class="form__data-item">
                 <ul class="form__data-list">
-                  <li class="form__data-text">
+                  <li class="form__data-text form__data-style">
                     <label for="feedback-name" class="form__feedback-text">Имя:</label>
-                    <input class="form__data-text" id="feedback-name" type="text" name="feedback-name" placeholder="Введите ваше имя*">
+                    <input class="form__data-text form__data-border" id="feedback-name" type="text" name="feedback-name" placeholder="Введите ваше имя*">
                   </li>
-                  <li class="form__data-text">
+                  <li class="form__data-text form__data-style">
                     <label for="feedback-surname" class="form__feedback-text">Фамилия:</label>
-                    <input class="form__data-text" id="feedback-surname" type="text" name="feedback-surname" placeholder="Укажите фамилию*">
+                    <input class="form__data-text form__data-border" id="feedback-surname" type="text" name="feedback-surname" placeholder="Укажите фамилию*">
                   </li>
-                  <li class="form__data-text">
+                  <li class="form__data-text form__data-style form__data-button">
                     <label for="feedback-patronymic" class="form__feedback-text">Отчество:</label>
-                    <input class="form__data-text" id="feedback-patronymic" type="text" name="feedback-patronymic" placeholder="Отчество, если желаете">
+                    <input class="form__data-text form__data-border" id="feedback-patronymic" type="text" name="feedback-patronymic" placeholder="Отчество, если желаете">
                   </li>
                 </ul>
               </div>
             </fieldset>
 
-            <fieldset class="form__phone">
-              <div class="form__phone-item">
-                <legend class="form__legend">ТЕЛ</legend>
+            <fieldset class="form__contacts">
+              <div class="form__content">
+                <label class="form__label">
+                  <span class="form__legend-text">ТЕЛ</span>
+                </label>
                 <input class="form__phone-tel form__phone-icon" id="phone" type="tel" name="phone" pattern="+7[0-9]{3}-[0-9]{3}" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-              </div>
-                <!--  <label for="phone">Телефон</label> -->
-            </fieldset>
-
-            <fieldset class="form__email">
-              <div class="form__email-item">
-                <legend class="form__legend">E-MAIL</legend>
+                <img class="form__phone-image" src="img/icon-phone.svg" alt="Телефон">
+                <label class="form__label form__label-email">
+                  <span class="form__legend-text">E-MAIL</span>
+                </label>
                 <input class="form__email-email form__email-icon" id="email" type="email" name="email" placeholder="Ваш Email*">
+                <img class="form__email-image" src="img/icon-mail.svg" alt="Почта">
               </div>
-                <!--  <label for="email">Почта</label> -->
             </fieldset>
 
             <fieldset class="form__extra">
               <div class="form__extra-item">
-                <legend class="form__legend">ДОП</legend>
-                <textarea class="form__extra-control" name="feedback-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <legend class="form__legend">
+                  <span class="form__legend-text">ДОП</span>
+                </legend>
+                <textarea class="form__extra-control form__extra-text" name="feedback-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </fieldset>
 
@@ -158,28 +165,28 @@
       </div>
     </main>
 
-    <footer class="page-footer page-footer__catalog">
+    <footer class="page-footer page-footer__index page-footer__form">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="#">
           <img src="img/logo-footer.svg" alt="Мишка">
         </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="#" class="social__link social__link--inst">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--facebook">Мы на Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--twitter">Мы в Твиттере</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <b class="page-footer__copyright-text">Разработано</b>
-          <a href="#" class="page-footer__copyright-link">HTML Academy</a>
-        </div>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--inst"><img src="img/icon-insta.svg">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook"><img src="img/icon-fb.svg">Мы на Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter"><img src="img/icon-twitter.svg">Мы в Твиттере</a>
+          </li>
+        </ul>
+        <p class="page-footer__copyright">
+          <a class="page-footer__copyright--link" href="#">
+            <span class="page-footer__copyright--text">Разработано</span>
+          </a>
+          <img class="page-footer__copyright--image" src="img/logo-htmlacademy.svg" width="27" height="34">
+        </p>
       </div>
     </footer>
 
