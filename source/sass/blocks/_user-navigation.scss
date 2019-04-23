@@ -59,7 +59,7 @@
   }
 
   .user-navigation__basket {
-    padding: 31px 50px 20px 83px;
+    padding: 31px 50px 33px 83px;
     position: relative;
 
     &::before {
@@ -99,11 +99,12 @@
   }
 
   .user-navigation__search::before {
-    left: -43px;
+    left: 32px;
     top: 36px;
   }
 
   .user-navigation__text {
     padding: 43px 48px 52px 33px;
+    margin-right: 74px;
   }
 }
