@@ -2,19 +2,6 @@
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-size: 320px 7px;
-    background-position-x: -8px;
-    background-repeat: repeat-x;
-  }
 }
 
 .contacts__wrapper {
@@ -65,6 +52,15 @@
 .contacts__link {
   color: #000000;
   border-bottom: 1px solid #63d1bb;
+}
+
+.contacts__link:hover {
+  color: #46c1ae;
+}
+
+.contacts__link:active {
+  color: rgba(70, 193, 174, 0.3);
+  border-bottom: 1px solid rgba(70, 193, 174, 0.3);
 }
 
 .contacts__map {
