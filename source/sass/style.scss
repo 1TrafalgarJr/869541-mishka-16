@@ -33,8 +33,41 @@ blockquote {
   margin: 0;
 }
 
+.menu::after,
+.catalog__title::after,
+.page-main__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-image: url("../img/bg-zigzag-fill.svg");
+  background-repeat: repeat-x;
+}
+
 @media (min-width: 768px) and (min-width: 1150px) {
   .page-header__background {
     background-color: #f9f9f9;
   }
+}
+
+@media (min-width: 768px) {
+  .menu::after,
+  .catalog__title::after,
+  .page-main__title::after {
+    bottom: -11px;
+    height: 24px;
+    background-size: 768px 23px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .menu::after,
+  .catalog__title::after,
+  .page-main__title::after {
+    bottom: -15px;
+    height: 35px;
+    background-size: auto 34px;
+    background-position-x: 8px;
+  }
+
 }

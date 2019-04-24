@@ -71,6 +71,10 @@
   padding: 16px 0;
 }
 
+.form__data-border:hover {
+  border-color: #62d1ba;
+}
+
 .form__data-text {
   margin-bottom: 6px;
   font-size: 17px;
@@ -135,9 +139,33 @@
   }
 }
 
-.form__type-radio {
-  clip-path: inset(100%);
+.form__radio:hover::before,
+.form__checkbox:hover::before {
+  border: 2px solid #62d1ba;
+}
+
+.form__radio:active::before,
+.form__checkbox:active::before {
+  border: 2px solid #444444;
+  opacity: 0.3;
+}
+
+.form__type-radio:checked + .form__radio::after {
+  content: "";
   position: absolute;
+  left: 12px;
+  top: 15px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #62d1ba;
+}
+
+input[type="radio"].form__type-hidden {
+  position: absolute;
+  margin: -1px;
+  width: 0;
+  height: 0;
 }
 
 .form__checkbox {
@@ -156,6 +184,18 @@
     left: -1px;
     top: 2px;
   }
+}
+
+.form__color-checkbox:checked + .form__checkbox::after {
+  content: "";
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 22px;
+  height: 9px;
+  border-left: 2px solid #444444;
+  border-bottom: 2px solid #444444;
+  left: 8px;
+  top: 15px;
 }
 
 .form__color {
@@ -227,6 +267,10 @@
   outline: 0;
 }
 
+.form__extra-control:hover {
+  border: 2px solid #62d1ba;
+}
+
 .form__legend-text {
   display: flex;
   align-items: center;
@@ -264,12 +308,25 @@
   position: absolute;
   top: 54px;
   right: 35px;
+  opacity: 0.2;
 }
 
 .form__email-image {
   position: absolute;
   top: 161px;
   right: 33px;
+  opacity: 0.2;
+}
+
+.form__phone-tel:hover,
+.form__email-email:hover {
+  border-color: #62d1ba;
+}
+
+.form__phone-tel:hover + .form__phone-image,
+.form__email-email:hover + .form__email-image {
+  fill: #62d1ba;
+  opacity: 1;
 }
 
 @media (min-width: 320px) {
@@ -483,6 +540,20 @@
   .form__email-image {
     top: 136px;
     right: 72px;
+  }
+
+  .form__type-radio:checked + .form__radio::after {
+    left: 15px;
+    top: 15px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .form__color-checkbox:checked + .form__checkbox::after {
+    width: 28px;
+    height: 12px;
+    left: 13px;
+    top: 15px;
   }
 }
 

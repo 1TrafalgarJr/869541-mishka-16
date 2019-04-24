@@ -9,19 +9,6 @@
   position: relative;
   padding-top: 30px;
   padding-bottom: 17px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-size: 320px 7px;
-    background-position-x: -8px;
-    background-repeat: repeat-x;
-  }
 }
 
 .info__title {
@@ -123,6 +110,7 @@
 
   .info__list {
     justify-content: space-between;
+    width: 50%;
   }
 
   .info__item {
@@ -130,29 +118,15 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 22px;
-    width: 44%;
     padding-right: 39px;
     padding-top: 62px;
+    width: 89%;
   }
 
-  .info__text--style {
-    order: 2;
-  }
-
-  .info__text--like {
-    order: 4;
-  }
-
-  .info__text--knitting {
-    order: 1;
-  }
-
-  .info__text--manufacturer {
-    order: 3;
-  }
-
-  .info__text--packaging {
-    order: 5;
+  .info__flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .info__item--materials,
@@ -180,10 +154,11 @@
 
   .info__list {
     justify-content: flex-start;
+    width: 357px;
   }
 
   .info__item {
-    width: 36%;
+    width: 100%;
   }
 
   .info__item--like {

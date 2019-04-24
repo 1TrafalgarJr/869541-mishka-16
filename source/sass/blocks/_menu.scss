@@ -54,22 +54,17 @@
   line-height: 24px;
   color: #ffffff;
   background-color: #63d1bb;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 62px;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    right: 36px;
-    bottom: 18px;
-  }
 }
 
 .menu__text {
   display: block;
   width: 120px;
+}
+
+.menu__interior--item {
+  position: absolute;
+  right: 31px;
+  opacity: 0.5;
 }
 
 .menu__toys {
@@ -81,17 +76,37 @@
   line-height: 24px;
   color: #ffffff;
   background-color: #56c3b2;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    right: 27px;
-    bottom: 22px;
-  }
+.menu__toys--item {
+  position: absolute;
+  right: 31px;
+  opacity: 0.5;
+}
+
+.menu__interior:hover {
+  background-color: #59d5bc;
+  transform: translateY(-5px);
+}
+
+.menu__interior:hover .menu__interior--item,
+.menu__toys:hover .menu__toys--item {
+  opacity: 0.7;
+}
+
+.menu__interior:active .menu__text,
+.menu__toys:active .menu__text {
+  opacity: 0.3;
+}
+
+.menu__interior:active .menu__interior--item,
+.menu__toys:active .menu__toys--item {
+  opacity: 0.3;
+}
+
+.menu__toys:hover {
+  background-color: #46c1ae;
+  transform: translateY(-5px);
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -158,6 +173,7 @@
       bottom: 29px;
     }
   }
+
 }
 
 @media (min-width: 1150px) {
@@ -168,6 +184,7 @@
   .menu__header {
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: -1px -52px;
+    background-size: 1150px 746px;
     padding-top: 103px;
     min-height: 695px;
 

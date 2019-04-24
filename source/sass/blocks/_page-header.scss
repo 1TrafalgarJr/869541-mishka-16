@@ -37,6 +37,14 @@
   text-align: right;
 }
 
+.page-header__logo-image:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo-image:active {
+  opacity: 0.3;
+}
+
 @media (min-width: 768px) {
   .page-header__item {
     background-color: #f9f9f9;
