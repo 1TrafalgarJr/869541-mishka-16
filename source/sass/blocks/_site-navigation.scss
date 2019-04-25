@@ -51,6 +51,10 @@
     padding: 17px 36px 10px 0;
     border-bottom: none;
   }
+
+  .site-navigation__color {
+    background-color: #f1f1f1;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -74,6 +78,10 @@
   }
 
   .site-navigation__flex {
+    background-color: #ffffff;
+  }
+
+  .site-navigation__color {
     background-color: #ffffff;
   }
 }
