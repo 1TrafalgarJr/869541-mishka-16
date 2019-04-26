@@ -79,6 +79,21 @@
   text-align: center;
 }
 
+@media (min-width: 320px) {
+  .best::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 7px;
+    right: 0;
+    bottom: -3px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 320px 7px;
+    background-position-x: -8px;
+    background-repeat: repeat-x;
+  }
+}
+
 @media (min-width: 768px) {
   .best__value {
     width: 33%;
@@ -86,6 +101,13 @@
 
   .best {
     padding: 22px 50px 50px 50px;
+
+    &::after {
+      height: 17px;
+      background-size: 768px 17px;
+      background-position-x: -20px;
+      bottom: -18px;
+    }
   }
 
   .best__list {
@@ -150,6 +172,15 @@
   .best {
     padding-top: 104px;
     padding-bottom: 74px;
+
+    &::after {
+      left: 50px;
+      right: 50px;
+      height: 23px;
+      background-size: 1050px 21px;
+      background-position-x: -25px;
+      bottom: -24px;
+    }
   }
 
   .best__list {
