@@ -1,14 +1,13 @@
-.info__wrapper {
-  box-sizing: border-box;
-  min-width: 320px;
-  max-width: 1150px;
-  margin: 0 auto;
-}
-
 .info {
   position: relative;
   padding-top: 30px;
   padding-bottom: 17px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
 }
 
 .info__title {
@@ -17,8 +16,6 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .info__list {
@@ -120,7 +117,7 @@
     line-height: 22px;
     padding-right: 39px;
     padding-top: 62px;
-    width: 89%;
+    width: 334px;
   }
 
   .info__flex {
@@ -154,11 +151,11 @@
 
   .info__list {
     justify-content: flex-start;
-    width: 357px;
+    width: 350px;
   }
 
   .info__item {
-    width: 100%;
+    width: 350px;
   }
 
   .info__item--like {
