@@ -16,7 +16,7 @@
   </div>
 
     <header class="page-header page-header__item">
-      <nav class="page-header__nav">
+      <nav class="page-header__nav page-header--no-js page-header--closed">
         <div class="page-header__logo">
           <a class="page-header__logo-image" href="index.html">
             <picture>
@@ -25,6 +25,7 @@
               <img class="page-header__logo-item" src="img/icon-logo-mobile-svg.svg" width="86" height="35" alt="Логотип сайта Мишка">
             </picture>
           </a>
+          <button class="page-header__toggle" id="toggle__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
         <ul class="page-header__site-list site-navigation">
           <li class="site-navigation__item site-navigation__item-catalog">
@@ -221,29 +222,25 @@
       </div>
     </footer>
 
-    <div class="modal modal-order">
+  <div class="modal modal-order">
+    <form class="modal__form modal__cart" method="post" action="https://echo.htmlacademy.ru">
       <h3 class="modal-title">Добавить в корзину</h3>
-      <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="modal__size">
-          <legend class="modal__legend">Выберите размер:</legend>
-          <ul class="modal__list">
-            <li class="modal__item">
-              <input class="modal__radio" id="S" type="radio" name="S" value="S">
-              <label for="S">S</label>
-            </li>
-            <li class="modal__item">
-              <input class="modal__radio" id="M" type="radio" name="M" value="M">
-              <label for="M">M</label>
-            </li>
-            <li class="modal__item">
-              <input class="modal__radio" id="L" type="radio" name="L" value="L">
-              <label for="L">L</label>
-            </li>
-          </ul>
-          <button class="button">Добавить</button>
-        </fieldset>
-      </form>
-    </div>
+      <fieldset class="modal__size">
+        <legend class="modal__legend">Выберите размер:</legend>
+        <div class="modal__list">
+          <input class="modal-order__radio visually-hidden" id="S" type="radio" name="radio" value="S" checked>
+          <label class="modal-order__label" for="S">S</label>
+          <input class="modal-order__radio visually-hidden" id="M" type="radio" name="radio" value="M">
+          <label class="modal-order__label" for="M">M</label>
+          <input class="modal-order__radio visually-hidden" id="L" type="radio" name="radio" value="L">
+          <label class="modal-order__label" for="L">L</label>
+        </div>
+      </fieldset>
+      <button class="modal__button">Добавить</button>
+    </form>
+  </div>
+
+  <script src="js/modal.js"></script>
 
   </body>
 </html>

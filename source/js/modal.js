@@ -15,13 +15,8 @@ navToggle.addEventListener('click', function () {
 
 let orderModal = document.querySelector('.modal-order');
 let buttonModal = document.querySelector('.button-modal');
-let catalogModal = document.querySelector('.catalog__all-card');
 
 if (orderModal) {
-  if (catalogModal) {
-    catalogModal.addEventListener('click', openOrderForm);
-  }
-
   if (buttonModal) {
     buttonModal.addEventListener('click', openOrderForm);
   }
@@ -32,20 +27,21 @@ if (orderModal) {
 
 function openOrderForm(evt) {
   let element = evt.target;
+  console.log(element);
 
   if (
-    element.classList.contains('catalog__price-basket') ||
-    element.classList.contains('button-modal')
+    element.classList.contains('button-modal') ||
+    element.parentElement.classList.contains('button-modal')
   ) {
-    event.preventDefault();
+    evt.preventDefault();
     orderModal.classList.add('modal--open');
   }
 }
 
 function closeOrderForm(evt) {
-  let element = event.target;
+  let element = evt.target;
 
-  if (element.classList.contains('modal-order') || event.keyCode === 27) {
+  if (element.classList.contains('modal-order') || evt.keyCode === 27) {
     orderModal.classList.remove('modal--open');
   }
 };

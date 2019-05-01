@@ -16,7 +16,7 @@
   </div>
 
   <header class="page-header page-header__item">
-    <nav class="page-header__nav">
+    <nav class="page-header__nav page-header--no-js page-header--closed">
       <div class="page-header__logo">
         <a class="page-header__logo-image" href="index.html">
           <picture>
@@ -25,6 +25,7 @@
             <img class="page-header__logo-item" src="img/icon-logo-mobile-svg.svg" width="86" height="35" alt="Логотип сайта Мишка">
           </picture>
         </a>
+        <button class="page-header__toggle" id="toggle__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <ul class="page-header__site-list site-navigation">
         <li class="site-navigation__item site-navigation__item-catalog">
@@ -225,6 +226,8 @@
         </p>
       </div>
     </footer>
+
+  <script src="js/modal.js"></script>
 
   </body>
 </html>
