@@ -64,9 +64,17 @@
   width: 37%;
 }
 
+.best__image {
+  display: block;
+  width: 260px;
+  height: auto;
+}
+
 .best__image-wrapper {
   overflow: hidden;
   margin: 0 auto;
+  width: 260px;
+  height: 315px;
 }
 
 .best__price {
@@ -77,6 +85,10 @@
   line-height: 24px;
   color: #444444;
   text-align: center;
+}
+
+.best__section {
+  position: relative;
 }
 
 @media (min-width: 320px) {
@@ -123,6 +135,7 @@
     font-weight: bold;
     font-size: 43px;
     line-height: 50px;
+    max-width: 500px;
   }
 
   .best__list-best {
@@ -132,11 +145,11 @@
     font-weight: bold;
     font-size: 17px;
     line-height: 17px;
-    max-width: 130px;
+    max-width: 120px;
   }
 
   .best__section {
-    padding-right: 376px;
+    padding-right: 378px;
     position: relative;
   }
 
@@ -152,7 +165,12 @@
     width: 333px;
     height: 404px;
     top: 7px;
-    left: 334px;
+    margin: 0;
+    right: 0;
+  }
+
+  .best__image {
+    width: 333px;
   }
 
   .best__list-specifications {
@@ -197,6 +215,7 @@
     font-weight: bold;
     font-size: 53px;
     line-height: 57px;
+    max-width: none;
   }
 
   .best__list-best {
@@ -217,11 +236,14 @@
     z-index: -1;
     width: 525px;
     height: 636px;
-    top: -159px;
-    right: -191px;
+    top: -143px;
   }
 
   .best__value {
     width: 35%;
+  }
+
+  .best__image {
+    width: 525px;
   }
 }

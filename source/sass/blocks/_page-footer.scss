@@ -1,8 +1,9 @@
 .page-footer {
   margin-top: 98px;
-  background-color: #ececec;
+  background-color: #f1f1f1;
   padding-top: 36px;
   padding-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .page-footer__form {
@@ -79,14 +80,15 @@
 
 @media (min-width: 768px) {
   .page-footer {
-    padding: 36px 50px 45px 50px;
+    padding: 36px 0;
   }
 
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .page-footer__logo {
@@ -121,6 +123,7 @@
 
   .page-footer {
     margin-top: 28px;
+    padding: 36px 0;
   }
 
   .page-footer__form {
