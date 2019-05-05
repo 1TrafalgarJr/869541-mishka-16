@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="preload">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <meta name="format-detection" content="telephone=no">
@@ -238,6 +238,7 @@
           <img class="contacts__map-image" src="/img/map-mobile@1x.jpg" srcset="/img/map-mobile@2x.jpg 2x" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         </picture>
         <div class="contacts__map-image-marker"></div>
+        <div class="contacts__map--interactive" id="map"></div>
         <div class="contacts__button">
           <a href="#" class="button contacts__button-item">Напишите нам</a>
         </div>
@@ -307,5 +308,6 @@
   <script src="js/modal.js"></script>
   <script src="js/svg4everybody.js"></script>
   <script>svg4everybody();</script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script>
   </body>
 </html>
