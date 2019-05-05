@@ -1,5 +1,5 @@
-let navHeader = document.querySelector('.page-header__nav');
-let navToggle = document.querySelector('.page-header__toggle');
+var navHeader = document.querySelector('.page-header__nav');
+var navToggle = document.querySelector('.page-header__toggle');
 
 navHeader.classList.remove('page-header--no-js');
 
@@ -13,9 +13,9 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-let orderModal = document.querySelector('.modal-order');
-let catalogBlock = document.querySelector('.catalog__all-card');
-let buttonModal = document.querySelector('.button-modal');
+var orderModal = document.querySelector('.modal-order');
+var catalogBlock = document.querySelector('.catalog__all-card');
+var buttonModal = document.querySelector('.button-modal');
 
 if (orderModal) {
   if (catalogBlock) {
@@ -31,7 +31,7 @@ if (orderModal) {
 }
 
 function openOrderForm(evt) {
-  let element = evt.target;
+  var element = evt.target;
   console.log(element);
 
   if (
@@ -44,9 +44,9 @@ function openOrderForm(evt) {
 }
 
 function closeOrderForm(evt) {
-  let element = evt.target;
+  var element = evt.target;
 
   if (element.classList.contains('modal-order') || evt.keyCode === 27) {
     orderModal.classList.remove('modal--open');
   }
-};
+}

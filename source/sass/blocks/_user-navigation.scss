@@ -70,8 +70,8 @@
 
   .user-navigation__text {
     padding: 36px 48px 52px 33px;
-    border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
   }
 
   .user-navigation__wrapper {
@@ -93,6 +93,7 @@
   .user-navigation {
     padding-right: 50px;
     width: 500px;
+    margin-bottom: 8px;
   }
 
   .user-navigation__wrapper--item {
@@ -100,7 +101,7 @@
   }
 
   .user-navigation__basket {
-    padding: 36px 0 35px 85px;
+    padding: 31px 0 33px 84px;
   }
 
   .user-navigation__searchs {
@@ -113,6 +114,7 @@
   }
 
   .user-navigation__text {
-    padding: 43px 48px 52px 33px;
+    padding: 39px 48px 49px 33px;
+    border-left: 1px solid #ececec;
   }
 }
