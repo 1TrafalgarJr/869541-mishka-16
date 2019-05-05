@@ -1,5 +1,21 @@
 @import "blocks/*.scss";
 
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
 .container {
   margin: 0;
   padding: 0;
@@ -7,18 +23,26 @@
   font-family: "Open Sans", "Arial", sans-serif;
   color: #444444;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
-  width: 0;
-  height: 0;
+  width: 1px;
+  height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 h2,
@@ -61,12 +85,25 @@ blockquote {
 }
 
 @media (min-width: 1150px) {
-  .menu::after,
-  .catalog__title::after,
-  .page-main__title::after {
+  .menu::after {
     bottom: -15px;
+    height: 35px;
+    background-size: auto 37px;
+    background-position-x: 8px;
+  }
+
+  .catalog__title::after {
+    bottom: -18px;
+    left: -12px;
     height: 35px;
     background-size: auto 34px;
     background-position-x: 8px;
+  }
+
+  .page-main__title::after {
+    bottom: -21px;
+    height: 35px;
+    background-size: auto 34px;
+    background-position-x: 6px;
   }
 }

@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  background-color: #f9f9f9;
 }
 
 .menu__content {
@@ -12,14 +13,14 @@
 }
 
 .menu__header {
-  background-size: 575px 373px;
+  background-size: 574px 372px;
   background-position: center -15%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   box-sizing: border-box;
-  padding: 76px 0 0;
+  padding: 70px 0 0;
   background-image: url("../img/hero-mobile@1x.jpg");
   min-height: 489px;
 }
@@ -34,8 +35,7 @@
   font-size: 27px;
   line-height: 30px;
   color: #010000;
-  padding-right: 39px;
-  padding-left: 39px;
+  padding: 0 30px;
 }
 
 .menu__section {
@@ -48,7 +48,7 @@
 .menu__interior {
   position: relative;
   display: block;
-  padding: 27px 30px 28px 30px;
+  padding: 25px 28px 31px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -63,14 +63,15 @@
 
 .menu__interior--item {
   position: absolute;
-  right: 31px;
+  right: 37px;
+  top: 23px;
   opacity: 0.5;
 }
 
 .menu__toys {
   position: relative;
   display: block;
-  padding: 27px 30px 28px 30px;
+  padding: 24px 30px 31px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -80,8 +81,10 @@
 
 .menu__toys--item {
   position: absolute;
-  right: 31px;
+  right: 27px;
+  top: 19px;
   opacity: 0.5;
+  fill: #149080;
 }
 
 .menu__interior:hover {
@@ -121,13 +124,14 @@
     background-size: 1150px 746px;
     background-position: -191px -63px;
     background-repeat: no-repeat;
-    padding-top: 90px;
+    padding-top: 92px;
     min-height: 684px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: 1150px 746px;
+      background-size: 1150px 748px;
       background-position: center bottom;
+      min-height: 685px;
     }
   }
 
@@ -153,7 +157,7 @@
   }
 
   .menu__interior {
-    padding: 27px 0 32px 36px;
+    padding: 28px 0 32px 36px;
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
@@ -163,8 +167,12 @@
     }
   }
 
+  .menu__interior--item {
+    top: 30px;
+  }
+
   .menu__toys {
-    padding: 27px 0 32px 36px;
+    padding: 28px 0 32px 36px;
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
@@ -173,6 +181,11 @@
       right: 33px;
       bottom: 29px;
     }
+  }
+
+  .menu__toys--item {
+    right: 34px;
+    top: 31px;
   }
 }
 

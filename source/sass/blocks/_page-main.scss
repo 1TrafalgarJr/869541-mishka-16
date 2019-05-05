@@ -3,18 +3,25 @@
   font-size: 27px;
   line-height: 30px;
   background-color: #f1f1f1;
+  max-width: 1050px;
   padding: 31px 30px 76px 30px;
   text-align: center;
   position: relative;
   margin: 0 auto;
+}
+
+.page-main {
+  margin: 0 auto;
   min-width: 320px;
-  max-width: 1050px;
+  max-width: 1150px;
 }
 
 @media (min-width: 320px) {
   .page-main__title {
     padding: 70px 30px 76px 30px;
-    display: flex;
+    display: block;
+    text-align: center;
+    position: relative;
   }
 }
 
@@ -24,7 +31,7 @@
     font-size: 43px;
     line-height: 50px;
     color: #000000;
-    padding: 31px 30px 76px 30px;
+    padding: 31px 30px 84px;
     justify-content: center;
   }
 }

@@ -45,7 +45,80 @@
   opacity: 0.3;
 }
 
+.page-header__toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  right: 30px;
+  top: 31px;
+}
+
+.page-header--closed .page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  width: 20px;
+  right: 1px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+}
+
+.page-header--open .page-header__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 1px;
+    width: 21px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.page-header__site-list,
+.page-header__user-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .page-header--closed .site-navigation__item,
+  .page-header--closed .user-navigation__item {
+    display: none;
+  }
+
+  .page-header--no-js .page-header__toggle {
+    display: none;
+  }
+
+  .page-header--no-js .page-header__site-list,
+  .page-header--no-js .page-header__user-list {
+    position: static;
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
+  .page-header__toggle {
+    display: none;
+  }
+
   .page-header__nav {
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +147,7 @@
     line-height: 24px;
     font-size: 15px;
     background-color: #f1f1f1;
-    padding: 18px 50px 20px 50px;
+    padding: 17px 50px 20px 50px;
     width: 48%;
   }
 
@@ -88,6 +161,19 @@
 }
 
 @media (min-width: 1150px) {
+  .page-header__user-list::after {
+    content: "";
+    position: absolute;
+    height: 88px;
+    width: 2px;
+    left: 499px;
+    background-color: #ffffff;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
   .page-header {
     overflow: hidden;
   }
@@ -95,8 +181,9 @@
   .page-header__logo {
     flex-grow: 0;
     order: 1;
-    padding: 9px 0 7px 0;
+    padding: 7px 0 6px;
     background-color: #ffffff;
+    margin-bottom: 8px;
   }
 
   .page-header__logo-image,

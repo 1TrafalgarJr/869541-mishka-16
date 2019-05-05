@@ -2,7 +2,7 @@
   position: relative;
   padding-bottom: 20px;
   margin: 0;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #ececec;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -26,11 +26,11 @@
   flex-wrap: wrap;
 }
 
-.social__link--svg:hover {
+.social__link:hover .social__link--svg {
   fill: #46c1ae;
 }
 
-.social__link--svg:active {
+.social__link:active .social__link--svg {
   fill: #46c1ae;
   opacity: 0.3;
 }
@@ -44,6 +44,10 @@
     justify-content: center;
     flex-wrap: wrap;
     height: 40px;
-    padding-top: 7px;
+    padding-top: 12px;
+  }
+
+  .social__link {
+    margin: 0 9px 0 11px;
   }
 }
