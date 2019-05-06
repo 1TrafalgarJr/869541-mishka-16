@@ -17,7 +17,7 @@ navToggle.addEventListener("click", function () {
   if (navHeader.classList.contains("page-header--no-js")) {
     navHeader.classList.remove("page-header--closed");
     navHeader.classList.add("page-header--open");
-  } 
+  }
 });
 
 var orderModal = document.querySelector(".modal-order");
