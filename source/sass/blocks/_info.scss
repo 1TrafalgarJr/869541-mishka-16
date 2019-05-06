@@ -102,18 +102,38 @@
 
   .info__list {
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
   }
 
   .info__item {
     padding-bottom: 48px;
-    letter-spacing: 0.1px;
+    letter-spacing: .1px;
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
-    padding-right: 39px;
+    padding-right: 34px;
     padding-top: 63px;
-    width: 334px;
+    width: 300px;
+  }
+
+  .info__text--style {
+    order: 2;
+  }
+
+  .info__text--like {
+    order: 4;
+  }
+
+  .info__text--knitting {
+    order: 1;
+  }
+
+  .info__text--manufacturer {
+    order: 3;
+  }
+
+  .info__text--packaging {
+    order: 5;
   }
 
   .info__flex {
@@ -153,17 +173,17 @@
 
   .info__list {
     justify-content: flex-start;
-    width: 350px;
   }
 
   .info__item {
     width: 350px;
     letter-spacing: 0.2px;
+    padding-right: 2px;
   }
 
   .info__item--like {
-    left: 14px;
-    top: 11px;
+    left: 11px;
+    top: 14px;
   }
 
   .info__item--style {

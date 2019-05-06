@@ -82,12 +82,14 @@
   letter-spacing: 0.3px;
 }
 
-.form__data-border:hover {
+.form__data-border:hover,
+.form__data-border:focus {
   border-color: #62d1ba;
 }
 
 .form__data-text {
   margin-bottom: 6px;
+  font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   box-sizing: border-box;
@@ -286,7 +288,8 @@ input[type="radio"].form__type-hidden,
   resize: vertical;
 }
 
-.form__extra-control:hover {
+.form__extra-control:hover,
+.form__extra-control:focus {
   border: 2px solid #62d1ba;
 }
 
@@ -336,7 +339,9 @@ input[type="radio"].form__type-hidden,
 }
 
 .form__phone-tel:hover,
-.form__email-email:hover {
+.form__email-email:hover,
+.form__phone-tel:focus,
+.form__email-email:focus {
   border-color: #62d1ba;
 }
 

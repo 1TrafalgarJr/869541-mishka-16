@@ -1,4 +1,4 @@
-.page-header {
+page-header {
   background-color: #ffffff;
 }
 
@@ -110,6 +110,11 @@
   .page-header--no-js .page-header__site-list,
   .page-header--no-js .page-header__user-list {
     position: static;
+    display: block;
+  }
+
+  .page-header--no-js .site-navigation__item,
+  .page-header--no-js .user-navigation__item {
     display: block;
   }
 }

@@ -19,9 +19,9 @@
       <div class="page-header__logo">
         <a class="page-header__logo-image" href="index.html">
           <picture>
-            <source media="(min-width: 1150px)" srcset="/img/icon-logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="/img/icon-logo-tablet.svg">
-            <img class="page-header__logo-item" src="/img/icon-logo-mobile-svg.svg" width="86" height="35" alt="Логотип сайта Мишка">
+            <source media="(min-width: 1150px)" srcset="img/icon-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/icon-logo-tablet.svg">
+            <img class="page-header__logo-item" src="img/icon-logo-mobile-svg.svg" width="86" height="35" alt="Логотип сайта Мишка">
           </picture>
         </a>
         <button class="page-header__toggle" id="toggle__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -37,16 +37,16 @@
       <ul class="page-header__user-list user-navigation">
         <li class="user-navigation__item">
           <a href="#" class="user-navigation__link user-navigation__text user-navigation__search">
-            <svg class="user-navigation__wrapper user-navigation__wrapper--item" width="17.6px" height="17.6px">
-              <use xlink:href="/img/sprite.svg#icon-search"></use>
+            <svg class="user-navigation__wrapper user-navigation__wrapper--item" width="17" height="17">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
             <span class="user-navigation__searchs">Поиск по сайту</span>
           </a>
         </li>
         <li class="user-navigation__item">
           <a href="#" class="user-navigation__link user-navigation__basket">
-            <svg class="user-navigation__wrapper" width="20.294px" height="18.849px">
-              <use xlink:href="/img/sprite.svg#icon-cart"></use>
+            <svg class="user-navigation__wrapper" width="20" height="18">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
             Корзина: пока пуста
           </a>
@@ -70,7 +70,7 @@
       <form class="form__filters" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="form__type">
           <legend class="form__legend">
-            <span class="form__legend-text">ТИП</span>
+            <span class="form__legend-text">Тип</span>
           </legend>
           <div class="form__type-item">
             <ul class="form__type-list">
@@ -87,7 +87,7 @@
         </fieldset>
         <fieldset class="form__color">
           <legend class="form__legend">
-            <span class="form__legend-text">ЦВЕТ</span>
+            <span class="form__legend-text">Цвет</span>
           </legend>
           <div class="form__color-item">
             <ul class="form__color-list">
@@ -142,14 +142,14 @@
         <fieldset class="form__contacts">
           <div class="form__content">
             <label class="form__label">
-              <span class="form__legend-text">ТЕЛ</span>
+              <span class="form__legend-text">Тел</span>
             </label>
             <input class="form__phone-tel form__phone-icon" id="phone" type="tel" name="phone" pattern="+7[0-9]{3}-[0-9]{3}" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             <svg class="form__phone-image" width="24.829px" height="24.333px">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
             <label class="form__label form__label-email">
-              <span class="form__legend-text">E-MAIL</span>
+              <span class="form__legend-text">e-mail</span>
             </label>
             <input class="form__email-email form__email-icon" id="email" type="email" name="email" placeholder="Ваш Email*">
             <svg class="form__email-image" width="32px" height="32px">
@@ -158,14 +158,13 @@
           </div>
         </fieldset>
         <fieldset class="form__extra">
-
           <legend class="form__legend">
-            <span class="form__legend-text">ДОП</span>
+            <span class="form__legend-text">Доп</span>
           </legend>
           <div class="form__legend--item">
-            <textarea class="form__extra-control form__extra-text" name="feedback-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <label class="form__label" id="info"></label>
+            <textarea class="form__extra-control form__extra-text" id="info" name="feedback-text" placeholder="Опишите все ваши пожелания к заказу" aria-label="Опишите все ваши пожелания к заказу"></textarea>
           </div>
-
         </fieldset>
         <div class="form__type-button">
           <p class="form__notes">*Поля обязательны для заполнения</p>
@@ -177,31 +176,31 @@
   <footer class="page-footer page-footer__form">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
-        <svg class="page-header__logo-svg" width="101.615px" height="34.056px">
-          <use xlink:href="/img/sprite.svg#icon-logo-footer"></use>
+        <svg class="page-header__logo-svg" width="101" height="34">
+          <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
         </svg>
       </a>
       <ul class="social__list">
         <li class="social__item">
           <a href="#" class="social__link social__link--inst">
-            <svg class="social__link--svg" width="21.769px" height="21.334px">
-              <use xlink:href="/img/sprite.svg#icon-insta"></use>
+            <svg class="social__link--svg" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
             Мы в Инстаграме
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--facebook">
-            <svg class="social__link--svg" width="14.962px" height="27.718px">
-              <use xlink:href="/img/sprite.svg#icon-fb"></use>
+            <svg class="social__link--svg" width="14" height="27">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
             Мы на Фейсбуке
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--twitter">
-            <svg class="social__link--svg" width="23.494px" height="20.168px">
-              <use xlink:href="/img/sprite.svg#icon-twitter"></use>
+            <svg class="social__link--svg" width="23" height="20">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
             Мы в Твиттере
           </a>
@@ -210,8 +209,8 @@
       <p class="page-footer__copyright page-footer__margin">
         <a class="page-footer__copyright--link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="page-footer__copyright--text">Разработано</span>
-          <svg class="page-footer__copyright--image" width="27px" height="34px">
-            <use xlink:href="/img/sprite.svg#icon-logo-htmlacademy"></use>
+          <svg class="page-footer__copyright--image" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
         </a>
       </p>
