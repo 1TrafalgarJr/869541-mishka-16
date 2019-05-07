@@ -39,7 +39,6 @@ if (orderModal) {
 
 function openOrderForm(evt) {
   var element = evt.target;
-  console.log(element);
 
   if (
     element.classList.contains("button-modal") ||
@@ -61,23 +60,23 @@ function closeOrderForm(evt) {
 
 
 function init(ymaps) {
-  var map = new ymaps.Map('map', {
+  var map = new ymaps.Map("map", {
     center: [59.938609530342944, 30.323033042327896],
     zoom: 16,
-    controls: ['zoomControl']
+    controls: ["zoomControl"]
   });
 
   var placemark = new ymaps.Placemark(
     [59.93868489868557, 30.323033042327896],
     {},
     {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/map-pin-svg.png',
+      iconLayout: "default#image",
+      iconImageHref: "img/map-pin-svg.png",
       iconImageSize: [66, 101],
       iconImageOffset: [-33, -101]
     }
   );
 
-  map.behaviors.disable('scrollZoom');
+  map.behaviors.disable("scrollZoom");
   map.geoObjects.add(placemark);
 }
