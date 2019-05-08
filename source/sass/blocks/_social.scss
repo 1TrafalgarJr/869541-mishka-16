@@ -26,11 +26,11 @@
   flex-wrap: wrap;
 }
 
-.social__link:hover .social__link--svg {
+.social__link:hover .social__link-svg {
   fill: #46c1ae;
 }
 
-.social__link:active .social__link--svg {
+.social__link:active .social__link-svg {
   fill: #46c1ae;
   opacity: 0.3;
 }

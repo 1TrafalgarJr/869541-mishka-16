@@ -12,27 +12,32 @@
   display: none;
 }
 
-.user-navigation__link {
+.user-navigation__search,
+.user-navigation__basket {
   display: block;
   padding: 31px 30px 31px 76px;
   color: #000000;
   border-bottom: 1px solid #ececec;
 }
 
-.user-navigation__link:hover {
+.user-navigation__search:hover,
+.user-navigation__basket:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.user-navigation__link:hover .user-navigation__wrapper {
+.user-navigation__search:hover .user-navigation__wrapper,
+.user-navigation__basket:hover .user-navigation__wrapper {
   fill: #63d1bb;
   opacity: 1;
 }
 
-.user-navigation__link:active {
+.user-navigation__search:active,
+.user-navigation__basket:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-navigation__link:active .user-navigation__wrapper {
+.user-navigation__search:active .user-navigation__wrapper,
+.user-navigation__basket:active .user-navigation__wrapper {
   fill: #63d1bb;
   opacity: 0.3;
 }
@@ -59,17 +64,9 @@
     width: 398px;
   }
 
-  .user-navigation__item {
-    list-style: none;
-    background-color: #ffffff;
-  }
-
-  .user-navigation__link {
+  .user-navigation__search {
     border-bottom: none;
     position: relative;
-  }
-
-  .user-navigation__text {
     padding: 36px 48px 52px 33px;
     border-right: 1px solid #ececec;
     border-left: 1px solid #ececec;
@@ -83,6 +80,7 @@
   .user-navigation__basket {
     padding: 31px 50px 33px 83px;
     position: relative;
+    border-bottom: none;
   }
 
   .user-navigation__searchs {
@@ -95,9 +93,19 @@
     padding-right: 50px;
     width: 500px;
     margin-bottom: 8px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: calc(50vw - 575px);
+      height: 100%;
+      background-color: #ffffff;
+      right: 500px;
+    }
   }
 
-  .user-navigation__wrapper--item {
+  .user-navigation__wrapper {
     left: 33px;
   }
 
@@ -114,7 +122,7 @@
     top: 36px;
   }
 
-  .user-navigation__text {
+  .user-navigation__search {
     padding: 39px 48px 49px 33px;
     border-left: 1px solid #ececec;
   }

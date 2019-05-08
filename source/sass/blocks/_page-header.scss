@@ -1,5 +1,5 @@
-.page-header {
-  background-color: #ffffff;
+.page-header--index {
+  background-color: #f9f9f9;
 }
 
 .page-header__nav {
@@ -26,11 +26,13 @@
 }
 
 .page-header__delivery,
-.page-header__stock-list {
+.stock-navigation,
+.page-header__block {
   display: none;
 }
 
-.page-header__delivery {
+.page-header__delivery,
+.page-header__block {
   box-sizing: border-box;
   margin: 0;
   padding: 18px 50px;
@@ -124,6 +126,10 @@
     display: none;
   }
 
+  .page-header__background {
+    background-color: #f9f9f9;
+  }
+
   .page-header__nav {
     display: flex;
     flex-wrap: wrap;
@@ -146,7 +152,8 @@
     order: 1;
   }
 
-  .page-header__delivery {
+  .page-header__delivery,
+  .page-header__block {
     display: block;
     order: 2;
     line-height: 24px;
@@ -158,10 +165,6 @@
 
   .page-header__form {
     background-color: #f1f1f1;
-  }
-
-  .page-header__background {
-    background-color: #f9f9f9;
   }
 }
 
@@ -181,6 +184,11 @@
 
   .page-header {
     overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .page-header--index {
+    background-color: #f9f9f9;
   }
 
   .page-header__logo {
@@ -189,6 +197,13 @@
     padding: 7px 0 6px;
     background-color: #ffffff;
     margin-bottom: 8px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 88px;
+      background-color: #ffffff;
+    }
   }
 
   .page-header__logo-image,
@@ -207,16 +222,21 @@
     background-color: #ffffff;
   }
 
-  .page-header__stock-list {
+  .stock-navigation {
     display: flex;
     order: 2;
   }
 
-  .page-header__delivery {
+  .page-header__delivery,
+  .page-header__block {
     order: 4;
     width: 500px;
     margin-left: auto;
     padding: 9px 50px;
+  }
+
+  .page-header__block {
+    background-color: #f1f1f1;
   }
 
   .page-header__nav {

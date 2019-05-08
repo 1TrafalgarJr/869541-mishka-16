@@ -34,52 +34,6 @@
   line-height: 20px;
 }
 
-.info__item--materials,
-.info__item--style,
-.info__item--like,
-.info__item--knitting,
-.info__item--manufacturer,
-.info__item--packaging {
-  fill: #63d1bb;
-}
-
-@media (min-width: 320px) {
-  .info__item--materials {
-    position: absolute;
-    top: 2px;
-    left: 8px;
-  }
-
-  .info__item--style {
-    position: absolute;
-    top: 2px;
-  }
-
-  .info__item--like {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-  }
-
-  .info__item--knitting {
-    left: 4px;
-    position: absolute;
-    top: 5px;
-  }
-
-  .info__item--manufacturer {
-    position: absolute;
-    top: 6px;
-    left: -5px;
-  }
-
-  .info__item--packaging {
-    position: absolute;
-    top: 4px;
-    left: 3px;
-  }
-}
-
 @media (min-width: 768px) {
   .info {
     padding: 42px 50px 35px;
@@ -116,23 +70,23 @@
     width: 300px;
   }
 
-  .info__text--style {
+  .info-style {
     order: 2;
   }
 
-  .info__text--like {
+  .info-like {
     order: 4;
   }
 
-  .info__text--knitting {
+  .info-knitting {
     order: 1;
   }
 
-  .info__text--manufacturer {
+  .info-manufacturer {
     order: 3;
   }
 
-  .info__text--packaging {
+  .info-packaging {
     order: 5;
   }
 
@@ -140,21 +94,6 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-  }
-
-  .info__item--materials,
-  .info__item--style {
-    top: 8px;
-  }
-
-  .info__item--like,
-  .info__item--knitting,
-  .info__item--manufacturer {
-    top: 12px;
-  }
-
-  .info__item--packaging {
-    top: 11px;
   }
 }
 
@@ -179,18 +118,5 @@
     width: 350px;
     letter-spacing: 0.2px;
     padding-right: 2px;
-  }
-
-  .info__item--like {
-    left: 11px;
-    top: 14px;
-  }
-
-  .info__item--style {
-    left: 7px;
-  }
-
-  .info__item--materials {
-    left: 15px;
   }
 }

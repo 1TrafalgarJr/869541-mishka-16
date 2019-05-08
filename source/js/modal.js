@@ -22,7 +22,7 @@ navToggle.addEventListener("click", function () {
 
 var orderModal = document.querySelector(".modal-order");
 var catalogBlock = document.querySelector(".catalog__all-card");
-var buttonModal = document.querySelector(".button-modal");
+var buttonModal = document.querySelector(".window");
 
 if (orderModal) {
   if (catalogBlock) {
@@ -41,8 +41,8 @@ function openOrderForm(evt) {
   var element = evt.target;
 
   if (
-    element.classList.contains("button-modal") ||
-    element.parentElement.classList.contains("button-modal")
+    element.classList.contains("window") ||
+    element.parentElement.classList.contains("window")
   ) {
     evt.preventDefault();
     orderModal.classList.add("modal--open");

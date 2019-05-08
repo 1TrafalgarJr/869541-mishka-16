@@ -1,10 +1,12 @@
 .contacts {
   position: relative;
   padding-top: 33px;
-  padding-bottom: 29px;
+  padding-bottom: 7px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.contacts__map--interactive {
+.contacts__map-interactive {
   position: absolute;
   z-index: 5000;
   top: 0;
@@ -15,9 +17,6 @@
 
 .contacts__wrapper {
   box-sizing: border-box;
-  min-width: 320px;
-  max-width: 1150px;
-  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -76,14 +75,14 @@
 .contacts__map {
   position: relative;
   height: 457px;
-  margin: 7px auto 0;
+  margin: 7px auto 6px;
 }
 
 .contacts__map-image {
   height: 457px;
 }
 
-.contacts__map-image-marker {
+.contacts__marker {
   z-index: 100;
   background-image: url("../img/map-pin-svg.png");
   background-repeat: no-repeat;
@@ -96,25 +95,29 @@
 
 .contacts__button {
   box-sizing: border-box;
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 1150px;
   padding: 33px 30px;
   letter-spacing: 0.7px;
+  order: 1;
+  width: 320px;
 }
 
 @media (min-width: 768px) {
   .contacts {
     padding-top: 67px;
-    padding-bottom: 66px;
+    padding-bottom: 18px;
 
     &::before {
       background-size: auto;
     }
   }
 
+  .contacts__link {
+    padding-bottom: 2px;
+  }
+
   .contacts__map {
     height: 457px;
+    margin: 0 auto 6px;
   }
 
   .contacts__wrapper {
@@ -166,14 +169,15 @@
     width: 768px;
   }
 
-  .contacts__map-image-marker {
+  .contacts__marker {
     top: 139px;
     left: 363px;
   }
 
   .contacts__button {
-    padding: 49px 50px 40px;
+    padding: 49px 43px 40px;
     letter-spacing: 0.1px;
+    margin: 0 auto;
   }
 
   .contacts__button-item {
@@ -186,14 +190,24 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 87px 50px 142px 50px;
+    padding: 87px 50px 105px;
     width: 1050px;
   }
 
+  .contacts__button {
+    margin: 12px 0 0 175px;
+    padding: 0;
+    letter-spacing: 0.1px;
+  }
+
+  .contacts__button-item {
+    margin: 0;
+  }
+  
   .contacts__wrapper {
     margin: 0;
     width: 47%;
-    padding: 73px 0 10px 172px;
+    padding: 73px 13px 10px 172px;
   }
 
   .contacts__text {
@@ -242,20 +256,15 @@
     height: 457px;
     right: 50px;
     top: 88px;
+    margin: 6px auto 6px;
   }
 
   .contacts__map-image {
     width: 525px;
   }
 
-  .contacts__map-image-marker {
+  .contacts__marker {
     top: 145px;
     left: 238px;
-  }
-
-  .contacts__button-item {
-    width: 230px;
-    margin-top: -107px;
-    margin-left: -399px;
   }
 }

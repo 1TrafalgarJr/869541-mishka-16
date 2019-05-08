@@ -1,9 +1,8 @@
 .page-footer {
-  margin-top: 101px;
   background-color: #f1f1f1;
-  padding-top: 36px;
-  padding-bottom: 10px;
+  padding-top: 19px;
   box-sizing: border-box;
+  padding-bottom: 22px;
 }
 
 .page-footer__form {
@@ -24,7 +23,7 @@
   display: none;
 }
 
-.page-footer__copyright--text {
+.page-footer__copyright-text {
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
@@ -39,24 +38,24 @@
   align-items: center;
 }
 
-.page-footer__copyright--link {
+.page-footer__copyright-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 0 12px;
+  padding: 17px 0 2px;
 }
 
-.page-footer__copyright--image {
+.page-footer__copyright-image {
   padding-left: 30px;
   fill: #63d1bb;
   padding-top: 4px;
 }
 
-.page-footer__copyright--link:hover .page-footer__copyright--image {
+.page-footer__copyright-link:hover .page-footer__copyright-image {
   fill: #46c1ae;
 }
 
-.page-footer__copyright--link:active {
+.page-footer__copyright-link:active {
   opacity: 0.3;
 }
 
@@ -72,7 +71,8 @@
 @media (min-width: 320px) {
   .page-footer__catalog {
     margin-top: 58px;
-    padding-bottom: 19px;
+    padding-bottom: 5px;
+    padding-top: 20px;
   }
 
   .page-footer__index {
@@ -86,7 +86,7 @@
 
 @media (min-width: 768px) {
   .page-footer {
-    padding: 28px 0 36px;
+    padding: 38px 0 45px;
   }
 
   .page-footer__index {
@@ -115,7 +115,7 @@
   }
 
   .page-footer__catalog {
-    padding: 40px 50px 44px;
+    padding: 29px 0 35px;
     margin-top: 62px;
   }
 
@@ -128,7 +128,7 @@
     margin-left: 6px;
   }
 
-  .page-footer__copyright--link {
+  .page-footer__copyright-link {
     padding: 14px 0 7px;
   }
 }
@@ -143,13 +143,12 @@
     padding-right: 50px;
   }
 
-  .page-footer__copyright--link {
+  .page-footer__copyright-link {
     padding: 14px 0 7px;
   }
 
   .page-footer {
-    margin-top: 28px;
-    padding: 28px 0 36px;
+    padding: 39px 0 45px;
   }
 
   .page-footer__margin {
@@ -163,8 +162,8 @@
   }
 
   .page-footer__catalog {
-    margin-top: 106px;
+    margin-top: 29px;
     background-color: #f1f1f1;
-    padding: 37px 0 47px;
+    padding: 27px 0 37px;
   }
 }

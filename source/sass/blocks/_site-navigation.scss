@@ -73,9 +73,23 @@
     padding-left: 50px;
     background-color: #ffffff;
     margin-bottom: 8px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(50vw - 526px);
+      background-color: #ffffff;
+      top: 0;
+      height: 100%;
+      right: 500px;
+    }
   }
 
-  .site-navigation__item-catalog {
+  .site-navigation__item:nth-child(2) {
+    border-right: 0;
+  }
+
+  .site-navigation__item {
     margin-right: 35px;
     border-right: 1px solid #ececec;
   }
